@@ -1,0 +1,3 @@
+/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles/ProjectSnake.dir
