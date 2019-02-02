@@ -50,7 +50,6 @@ void CommandCenter::Map(const Event& event, GameCommand* command)
 
 void CommandCenter::ProcessCommands()
 {
-	// performans geliştirmesi için command list yerine circular queue implement edilecek
 	for(int i = mLastIndex; i < mCommandList.size(); i++)
 	{
 		Event event = mCommandList[i];
