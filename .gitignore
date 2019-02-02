@@ -26,3 +26,4 @@ resources/*
 !resources/textures/food.png
 
 CMakeLists.txt
+.gitmodules
