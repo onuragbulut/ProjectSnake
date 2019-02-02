@@ -24,3 +24,5 @@ resources/*
 !resources/shaders/effects/postProcessingFS.glsl
 !resources/textures/body.jpg
 !resources/textures/food.png
+
+CMakeLists.txt
