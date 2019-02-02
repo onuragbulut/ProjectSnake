@@ -56,6 +56,52 @@ CMAKE_BINARY_DIR = /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debu
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"assimp-bin\" \"assimp-dev\" \"libassimp4.1.0\" \"libassimp4.1.0-dev\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -123,32 +169,1632 @@ ProjectSnake/fast:
 	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/build
 .PHONY : ProjectSnake/fast
 
-main.o: main.cpp.o
+#=============================================================================
+# Target rules for targets named glfw
 
-.PHONY : main.o
+# Build rule for target.
+glfw: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 glfw
+.PHONY : glfw
+
+# fast build rule for target.
+glfw/fast:
+	$(MAKE) -f thirdparty/glfw/src/CMakeFiles/glfw.dir/build.make thirdparty/glfw/src/CMakeFiles/glfw.dir/build
+.PHONY : glfw/fast
+
+#=============================================================================
+# Target rules for targets named docs
+
+# Build rule for target.
+docs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 docs
+.PHONY : docs
+
+# fast build rule for target.
+docs/fast:
+	$(MAKE) -f thirdparty/glfw/docs/CMakeFiles/docs.dir/build.make thirdparty/glfw/docs/CMakeFiles/docs.dir/build
+.PHONY : docs/fast
+
+#=============================================================================
+# Target rules for targets named libglewmx_static
+
+# Build rule for target.
+libglewmx_static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libglewmx_static
+.PHONY : libglewmx_static
+
+# fast build rule for target.
+libglewmx_static/fast:
+	$(MAKE) -f thirdparty/glew/CMakeFiles/libglewmx_static.dir/build.make thirdparty/glew/CMakeFiles/libglewmx_static.dir/build
+.PHONY : libglewmx_static/fast
+
+#=============================================================================
+# Target rules for targets named libglew_static
+
+# Build rule for target.
+libglew_static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libglew_static
+.PHONY : libglew_static
+
+# fast build rule for target.
+libglew_static/fast:
+	$(MAKE) -f thirdparty/glew/CMakeFiles/libglew_static.dir/build.make thirdparty/glew/CMakeFiles/libglew_static.dir/build
+.PHONY : libglew_static/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) -f thirdparty/gtest/googlemock/CMakeFiles/gmock.dir/build.make thirdparty/gtest/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) -f thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir/build.make thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) -f thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named uninstall
+
+# Build rule for target.
+uninstall: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 uninstall
+.PHONY : uninstall
+
+# fast build rule for target.
+uninstall/fast:
+	$(MAKE) -f thirdparty/assimp/CMakeFiles/uninstall.dir/build.make thirdparty/assimp/CMakeFiles/uninstall.dir/build
+.PHONY : uninstall/fast
+
+#=============================================================================
+# Target rules for targets named IrrXML
+
+# Build rule for target.
+IrrXML: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 IrrXML
+.PHONY : IrrXML
+
+# fast build rule for target.
+IrrXML/fast:
+	$(MAKE) -f thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/build.make thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/build
+.PHONY : IrrXML/fast
+
+#=============================================================================
+# Target rules for targets named assimp
+
+# Build rule for target.
+assimp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 assimp
+.PHONY : assimp
+
+# fast build rule for target.
+assimp/fast:
+	$(MAKE) -f thirdparty/assimp/code/CMakeFiles/assimp.dir/build.make thirdparty/assimp/code/CMakeFiles/assimp.dir/build
+.PHONY : assimp/fast
+
+#=============================================================================
+# Target rules for targets named assimp_cmd
+
+# Build rule for target.
+assimp_cmd: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 assimp_cmd
+.PHONY : assimp_cmd
+
+# fast build rule for target.
+assimp_cmd/fast:
+	$(MAKE) -f thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build
+.PHONY : assimp_cmd/fast
+
+#=============================================================================
+# Target rules for targets named unit
+
+# Build rule for target.
+unit: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 unit
+.PHONY : unit
+
+# fast build rule for target.
+unit/fast:
+	$(MAKE) -f thirdparty/assimp/test/CMakeFiles/unit.dir/build.make thirdparty/assimp/test/CMakeFiles/unit.dir/build
+.PHONY : unit/fast
+
+src/core/effect/Bloom.o: src/core/effect/Bloom.cpp.o
+
+.PHONY : src/core/effect/Bloom.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/core/effect/Bloom.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/effect/Bloom.cpp.o
+.PHONY : src/core/effect/Bloom.cpp.o
 
-main.i: main.cpp.i
+src/core/effect/Bloom.i: src/core/effect/Bloom.cpp.i
 
-.PHONY : main.i
+.PHONY : src/core/effect/Bloom.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/core/effect/Bloom.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/effect/Bloom.cpp.i
+.PHONY : src/core/effect/Bloom.cpp.i
 
-main.s: main.cpp.s
+src/core/effect/Bloom.s: src/core/effect/Bloom.cpp.s
 
-.PHONY : main.s
+.PHONY : src/core/effect/Bloom.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/core/effect/Bloom.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/effect/Bloom.cpp.s
+.PHONY : src/core/effect/Bloom.cpp.s
+
+src/core/effect/Shadow.o: src/core/effect/Shadow.cpp.o
+
+.PHONY : src/core/effect/Shadow.o
+
+# target to build an object file
+src/core/effect/Shadow.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/effect/Shadow.cpp.o
+.PHONY : src/core/effect/Shadow.cpp.o
+
+src/core/effect/Shadow.i: src/core/effect/Shadow.cpp.i
+
+.PHONY : src/core/effect/Shadow.i
+
+# target to preprocess a source file
+src/core/effect/Shadow.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/effect/Shadow.cpp.i
+.PHONY : src/core/effect/Shadow.cpp.i
+
+src/core/effect/Shadow.s: src/core/effect/Shadow.cpp.s
+
+.PHONY : src/core/effect/Shadow.s
+
+# target to generate assembly for a file
+src/core/effect/Shadow.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/effect/Shadow.cpp.s
+.PHONY : src/core/effect/Shadow.cpp.s
+
+src/core/factory/AssetFactory.o: src/core/factory/AssetFactory.cpp.o
+
+.PHONY : src/core/factory/AssetFactory.o
+
+# target to build an object file
+src/core/factory/AssetFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/factory/AssetFactory.cpp.o
+.PHONY : src/core/factory/AssetFactory.cpp.o
+
+src/core/factory/AssetFactory.i: src/core/factory/AssetFactory.cpp.i
+
+.PHONY : src/core/factory/AssetFactory.i
+
+# target to preprocess a source file
+src/core/factory/AssetFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/factory/AssetFactory.cpp.i
+.PHONY : src/core/factory/AssetFactory.cpp.i
+
+src/core/factory/AssetFactory.s: src/core/factory/AssetFactory.cpp.s
+
+.PHONY : src/core/factory/AssetFactory.s
+
+# target to generate assembly for a file
+src/core/factory/AssetFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/factory/AssetFactory.cpp.s
+.PHONY : src/core/factory/AssetFactory.cpp.s
+
+src/core/factory/BufferFactory.o: src/core/factory/BufferFactory.cpp.o
+
+.PHONY : src/core/factory/BufferFactory.o
+
+# target to build an object file
+src/core/factory/BufferFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/factory/BufferFactory.cpp.o
+.PHONY : src/core/factory/BufferFactory.cpp.o
+
+src/core/factory/BufferFactory.i: src/core/factory/BufferFactory.cpp.i
+
+.PHONY : src/core/factory/BufferFactory.i
+
+# target to preprocess a source file
+src/core/factory/BufferFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/factory/BufferFactory.cpp.i
+.PHONY : src/core/factory/BufferFactory.cpp.i
+
+src/core/factory/BufferFactory.s: src/core/factory/BufferFactory.cpp.s
+
+.PHONY : src/core/factory/BufferFactory.s
+
+# target to generate assembly for a file
+src/core/factory/BufferFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/factory/BufferFactory.cpp.s
+.PHONY : src/core/factory/BufferFactory.cpp.s
+
+src/core/factory/ModelFactory.o: src/core/factory/ModelFactory.cpp.o
+
+.PHONY : src/core/factory/ModelFactory.o
+
+# target to build an object file
+src/core/factory/ModelFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/factory/ModelFactory.cpp.o
+.PHONY : src/core/factory/ModelFactory.cpp.o
+
+src/core/factory/ModelFactory.i: src/core/factory/ModelFactory.cpp.i
+
+.PHONY : src/core/factory/ModelFactory.i
+
+# target to preprocess a source file
+src/core/factory/ModelFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/factory/ModelFactory.cpp.i
+.PHONY : src/core/factory/ModelFactory.cpp.i
+
+src/core/factory/ModelFactory.s: src/core/factory/ModelFactory.cpp.s
+
+.PHONY : src/core/factory/ModelFactory.s
+
+# target to generate assembly for a file
+src/core/factory/ModelFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/factory/ModelFactory.cpp.s
+.PHONY : src/core/factory/ModelFactory.cpp.s
+
+src/core/factory/RenderTargetFactory.o: src/core/factory/RenderTargetFactory.cpp.o
+
+.PHONY : src/core/factory/RenderTargetFactory.o
+
+# target to build an object file
+src/core/factory/RenderTargetFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/factory/RenderTargetFactory.cpp.o
+.PHONY : src/core/factory/RenderTargetFactory.cpp.o
+
+src/core/factory/RenderTargetFactory.i: src/core/factory/RenderTargetFactory.cpp.i
+
+.PHONY : src/core/factory/RenderTargetFactory.i
+
+# target to preprocess a source file
+src/core/factory/RenderTargetFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/factory/RenderTargetFactory.cpp.i
+.PHONY : src/core/factory/RenderTargetFactory.cpp.i
+
+src/core/factory/RenderTargetFactory.s: src/core/factory/RenderTargetFactory.cpp.s
+
+.PHONY : src/core/factory/RenderTargetFactory.s
+
+# target to generate assembly for a file
+src/core/factory/RenderTargetFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/factory/RenderTargetFactory.cpp.s
+.PHONY : src/core/factory/RenderTargetFactory.cpp.s
+
+src/core/factory/ShaderCreator.o: src/core/factory/ShaderCreator.cpp.o
+
+.PHONY : src/core/factory/ShaderCreator.o
+
+# target to build an object file
+src/core/factory/ShaderCreator.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/factory/ShaderCreator.cpp.o
+.PHONY : src/core/factory/ShaderCreator.cpp.o
+
+src/core/factory/ShaderCreator.i: src/core/factory/ShaderCreator.cpp.i
+
+.PHONY : src/core/factory/ShaderCreator.i
+
+# target to preprocess a source file
+src/core/factory/ShaderCreator.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/factory/ShaderCreator.cpp.i
+.PHONY : src/core/factory/ShaderCreator.cpp.i
+
+src/core/factory/ShaderCreator.s: src/core/factory/ShaderCreator.cpp.s
+
+.PHONY : src/core/factory/ShaderCreator.s
+
+# target to generate assembly for a file
+src/core/factory/ShaderCreator.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/factory/ShaderCreator.cpp.s
+.PHONY : src/core/factory/ShaderCreator.cpp.s
+
+src/core/factory/TextureFactory.o: src/core/factory/TextureFactory.cpp.o
+
+.PHONY : src/core/factory/TextureFactory.o
+
+# target to build an object file
+src/core/factory/TextureFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/factory/TextureFactory.cpp.o
+.PHONY : src/core/factory/TextureFactory.cpp.o
+
+src/core/factory/TextureFactory.i: src/core/factory/TextureFactory.cpp.i
+
+.PHONY : src/core/factory/TextureFactory.i
+
+# target to preprocess a source file
+src/core/factory/TextureFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/factory/TextureFactory.cpp.i
+.PHONY : src/core/factory/TextureFactory.cpp.i
+
+src/core/factory/TextureFactory.s: src/core/factory/TextureFactory.cpp.s
+
+.PHONY : src/core/factory/TextureFactory.s
+
+# target to generate assembly for a file
+src/core/factory/TextureFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/factory/TextureFactory.cpp.s
+.PHONY : src/core/factory/TextureFactory.cpp.s
+
+src/core/graphics/BoundingBox.o: src/core/graphics/BoundingBox.cpp.o
+
+.PHONY : src/core/graphics/BoundingBox.o
+
+# target to build an object file
+src/core/graphics/BoundingBox.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/BoundingBox.cpp.o
+.PHONY : src/core/graphics/BoundingBox.cpp.o
+
+src/core/graphics/BoundingBox.i: src/core/graphics/BoundingBox.cpp.i
+
+.PHONY : src/core/graphics/BoundingBox.i
+
+# target to preprocess a source file
+src/core/graphics/BoundingBox.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/BoundingBox.cpp.i
+.PHONY : src/core/graphics/BoundingBox.cpp.i
+
+src/core/graphics/BoundingBox.s: src/core/graphics/BoundingBox.cpp.s
+
+.PHONY : src/core/graphics/BoundingBox.s
+
+# target to generate assembly for a file
+src/core/graphics/BoundingBox.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/BoundingBox.cpp.s
+.PHONY : src/core/graphics/BoundingBox.cpp.s
+
+src/core/graphics/Cubemap.o: src/core/graphics/Cubemap.cpp.o
+
+.PHONY : src/core/graphics/Cubemap.o
+
+# target to build an object file
+src/core/graphics/Cubemap.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/Cubemap.cpp.o
+.PHONY : src/core/graphics/Cubemap.cpp.o
+
+src/core/graphics/Cubemap.i: src/core/graphics/Cubemap.cpp.i
+
+.PHONY : src/core/graphics/Cubemap.i
+
+# target to preprocess a source file
+src/core/graphics/Cubemap.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/Cubemap.cpp.i
+.PHONY : src/core/graphics/Cubemap.cpp.i
+
+src/core/graphics/Cubemap.s: src/core/graphics/Cubemap.cpp.s
+
+.PHONY : src/core/graphics/Cubemap.s
+
+# target to generate assembly for a file
+src/core/graphics/Cubemap.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/Cubemap.cpp.s
+.PHONY : src/core/graphics/Cubemap.cpp.s
+
+src/core/graphics/Light.o: src/core/graphics/Light.cpp.o
+
+.PHONY : src/core/graphics/Light.o
+
+# target to build an object file
+src/core/graphics/Light.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/Light.cpp.o
+.PHONY : src/core/graphics/Light.cpp.o
+
+src/core/graphics/Light.i: src/core/graphics/Light.cpp.i
+
+.PHONY : src/core/graphics/Light.i
+
+# target to preprocess a source file
+src/core/graphics/Light.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/Light.cpp.i
+.PHONY : src/core/graphics/Light.cpp.i
+
+src/core/graphics/Light.s: src/core/graphics/Light.cpp.s
+
+.PHONY : src/core/graphics/Light.s
+
+# target to generate assembly for a file
+src/core/graphics/Light.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/Light.cpp.s
+.PHONY : src/core/graphics/Light.cpp.s
+
+src/core/graphics/RenderCache.o: src/core/graphics/RenderCache.cpp.o
+
+.PHONY : src/core/graphics/RenderCache.o
+
+# target to build an object file
+src/core/graphics/RenderCache.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderCache.cpp.o
+.PHONY : src/core/graphics/RenderCache.cpp.o
+
+src/core/graphics/RenderCache.i: src/core/graphics/RenderCache.cpp.i
+
+.PHONY : src/core/graphics/RenderCache.i
+
+# target to preprocess a source file
+src/core/graphics/RenderCache.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderCache.cpp.i
+.PHONY : src/core/graphics/RenderCache.cpp.i
+
+src/core/graphics/RenderCache.s: src/core/graphics/RenderCache.cpp.s
+
+.PHONY : src/core/graphics/RenderCache.s
+
+# target to generate assembly for a file
+src/core/graphics/RenderCache.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderCache.cpp.s
+.PHONY : src/core/graphics/RenderCache.cpp.s
+
+src/core/graphics/RenderTarget.o: src/core/graphics/RenderTarget.cpp.o
+
+.PHONY : src/core/graphics/RenderTarget.o
+
+# target to build an object file
+src/core/graphics/RenderTarget.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderTarget.cpp.o
+.PHONY : src/core/graphics/RenderTarget.cpp.o
+
+src/core/graphics/RenderTarget.i: src/core/graphics/RenderTarget.cpp.i
+
+.PHONY : src/core/graphics/RenderTarget.i
+
+# target to preprocess a source file
+src/core/graphics/RenderTarget.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderTarget.cpp.i
+.PHONY : src/core/graphics/RenderTarget.cpp.i
+
+src/core/graphics/RenderTarget.s: src/core/graphics/RenderTarget.cpp.s
+
+.PHONY : src/core/graphics/RenderTarget.s
+
+# target to generate assembly for a file
+src/core/graphics/RenderTarget.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderTarget.cpp.s
+.PHONY : src/core/graphics/RenderTarget.cpp.s
+
+src/core/graphics/Renderer.o: src/core/graphics/Renderer.cpp.o
+
+.PHONY : src/core/graphics/Renderer.o
+
+# target to build an object file
+src/core/graphics/Renderer.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/Renderer.cpp.o
+.PHONY : src/core/graphics/Renderer.cpp.o
+
+src/core/graphics/Renderer.i: src/core/graphics/Renderer.cpp.i
+
+.PHONY : src/core/graphics/Renderer.i
+
+# target to preprocess a source file
+src/core/graphics/Renderer.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/Renderer.cpp.i
+.PHONY : src/core/graphics/Renderer.cpp.i
+
+src/core/graphics/Renderer.s: src/core/graphics/Renderer.cpp.s
+
+.PHONY : src/core/graphics/Renderer.s
+
+# target to generate assembly for a file
+src/core/graphics/Renderer.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/Renderer.cpp.s
+.PHONY : src/core/graphics/Renderer.cpp.s
+
+src/core/graphics/Shader.o: src/core/graphics/Shader.cpp.o
+
+.PHONY : src/core/graphics/Shader.o
+
+# target to build an object file
+src/core/graphics/Shader.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/Shader.cpp.o
+.PHONY : src/core/graphics/Shader.cpp.o
+
+src/core/graphics/Shader.i: src/core/graphics/Shader.cpp.i
+
+.PHONY : src/core/graphics/Shader.i
+
+# target to preprocess a source file
+src/core/graphics/Shader.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/Shader.cpp.i
+.PHONY : src/core/graphics/Shader.cpp.i
+
+src/core/graphics/Shader.s: src/core/graphics/Shader.cpp.s
+
+.PHONY : src/core/graphics/Shader.s
+
+# target to generate assembly for a file
+src/core/graphics/Shader.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/Shader.cpp.s
+.PHONY : src/core/graphics/Shader.cpp.s
+
+src/core/graphics/Texture.o: src/core/graphics/Texture.cpp.o
+
+.PHONY : src/core/graphics/Texture.o
+
+# target to build an object file
+src/core/graphics/Texture.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/Texture.cpp.o
+.PHONY : src/core/graphics/Texture.cpp.o
+
+src/core/graphics/Texture.i: src/core/graphics/Texture.cpp.i
+
+.PHONY : src/core/graphics/Texture.i
+
+# target to preprocess a source file
+src/core/graphics/Texture.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/Texture.cpp.i
+.PHONY : src/core/graphics/Texture.cpp.i
+
+src/core/graphics/Texture.s: src/core/graphics/Texture.cpp.s
+
+.PHONY : src/core/graphics/Texture.s
+
+# target to generate assembly for a file
+src/core/graphics/Texture.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/graphics/Texture.cpp.s
+.PHONY : src/core/graphics/Texture.cpp.s
+
+src/core/input/InputDevice.o: src/core/input/InputDevice.cpp.o
+
+.PHONY : src/core/input/InputDevice.o
+
+# target to build an object file
+src/core/input/InputDevice.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/input/InputDevice.cpp.o
+.PHONY : src/core/input/InputDevice.cpp.o
+
+src/core/input/InputDevice.i: src/core/input/InputDevice.cpp.i
+
+.PHONY : src/core/input/InputDevice.i
+
+# target to preprocess a source file
+src/core/input/InputDevice.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/input/InputDevice.cpp.i
+.PHONY : src/core/input/InputDevice.cpp.i
+
+src/core/input/InputDevice.s: src/core/input/InputDevice.cpp.s
+
+.PHONY : src/core/input/InputDevice.s
+
+# target to generate assembly for a file
+src/core/input/InputDevice.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/input/InputDevice.cpp.s
+.PHONY : src/core/input/InputDevice.cpp.s
+
+src/core/mesh/Mesh.o: src/core/mesh/Mesh.cpp.o
+
+.PHONY : src/core/mesh/Mesh.o
+
+# target to build an object file
+src/core/mesh/Mesh.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/mesh/Mesh.cpp.o
+.PHONY : src/core/mesh/Mesh.cpp.o
+
+src/core/mesh/Mesh.i: src/core/mesh/Mesh.cpp.i
+
+.PHONY : src/core/mesh/Mesh.i
+
+# target to preprocess a source file
+src/core/mesh/Mesh.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/mesh/Mesh.cpp.i
+.PHONY : src/core/mesh/Mesh.cpp.i
+
+src/core/mesh/Mesh.s: src/core/mesh/Mesh.cpp.s
+
+.PHONY : src/core/mesh/Mesh.s
+
+# target to generate assembly for a file
+src/core/mesh/Mesh.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/mesh/Mesh.cpp.s
+.PHONY : src/core/mesh/Mesh.cpp.s
+
+src/core/mesh/Model.o: src/core/mesh/Model.cpp.o
+
+.PHONY : src/core/mesh/Model.o
+
+# target to build an object file
+src/core/mesh/Model.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/mesh/Model.cpp.o
+.PHONY : src/core/mesh/Model.cpp.o
+
+src/core/mesh/Model.i: src/core/mesh/Model.cpp.i
+
+.PHONY : src/core/mesh/Model.i
+
+# target to preprocess a source file
+src/core/mesh/Model.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/mesh/Model.cpp.i
+.PHONY : src/core/mesh/Model.cpp.i
+
+src/core/mesh/Model.s: src/core/mesh/Model.cpp.s
+
+.PHONY : src/core/mesh/Model.s
+
+# target to generate assembly for a file
+src/core/mesh/Model.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/mesh/Model.cpp.s
+.PHONY : src/core/mesh/Model.cpp.s
+
+src/core/mesh/Quad.o: src/core/mesh/Quad.cpp.o
+
+.PHONY : src/core/mesh/Quad.o
+
+# target to build an object file
+src/core/mesh/Quad.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/mesh/Quad.cpp.o
+.PHONY : src/core/mesh/Quad.cpp.o
+
+src/core/mesh/Quad.i: src/core/mesh/Quad.cpp.i
+
+.PHONY : src/core/mesh/Quad.i
+
+# target to preprocess a source file
+src/core/mesh/Quad.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/mesh/Quad.cpp.i
+.PHONY : src/core/mesh/Quad.cpp.i
+
+src/core/mesh/Quad.s: src/core/mesh/Quad.cpp.s
+
+.PHONY : src/core/mesh/Quad.s
+
+# target to generate assembly for a file
+src/core/mesh/Quad.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/mesh/Quad.cpp.s
+.PHONY : src/core/mesh/Quad.cpp.s
+
+src/core/mesh/Sprite.o: src/core/mesh/Sprite.cpp.o
+
+.PHONY : src/core/mesh/Sprite.o
+
+# target to build an object file
+src/core/mesh/Sprite.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/mesh/Sprite.cpp.o
+.PHONY : src/core/mesh/Sprite.cpp.o
+
+src/core/mesh/Sprite.i: src/core/mesh/Sprite.cpp.i
+
+.PHONY : src/core/mesh/Sprite.i
+
+# target to preprocess a source file
+src/core/mesh/Sprite.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/mesh/Sprite.cpp.i
+.PHONY : src/core/mesh/Sprite.cpp.i
+
+src/core/mesh/Sprite.s: src/core/mesh/Sprite.cpp.s
+
+.PHONY : src/core/mesh/Sprite.s
+
+# target to generate assembly for a file
+src/core/mesh/Sprite.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/mesh/Sprite.cpp.s
+.PHONY : src/core/mesh/Sprite.cpp.s
+
+src/core/mesh/Terrain.o: src/core/mesh/Terrain.cpp.o
+
+.PHONY : src/core/mesh/Terrain.o
+
+# target to build an object file
+src/core/mesh/Terrain.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/mesh/Terrain.cpp.o
+.PHONY : src/core/mesh/Terrain.cpp.o
+
+src/core/mesh/Terrain.i: src/core/mesh/Terrain.cpp.i
+
+.PHONY : src/core/mesh/Terrain.i
+
+# target to preprocess a source file
+src/core/mesh/Terrain.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/mesh/Terrain.cpp.i
+.PHONY : src/core/mesh/Terrain.cpp.i
+
+src/core/mesh/Terrain.s: src/core/mesh/Terrain.cpp.s
+
+.PHONY : src/core/mesh/Terrain.s
+
+# target to generate assembly for a file
+src/core/mesh/Terrain.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/mesh/Terrain.cpp.s
+.PHONY : src/core/mesh/Terrain.cpp.s
+
+src/core/mesh/Vegetation.o: src/core/mesh/Vegetation.cpp.o
+
+.PHONY : src/core/mesh/Vegetation.o
+
+# target to build an object file
+src/core/mesh/Vegetation.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/mesh/Vegetation.cpp.o
+.PHONY : src/core/mesh/Vegetation.cpp.o
+
+src/core/mesh/Vegetation.i: src/core/mesh/Vegetation.cpp.i
+
+.PHONY : src/core/mesh/Vegetation.i
+
+# target to preprocess a source file
+src/core/mesh/Vegetation.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/mesh/Vegetation.cpp.i
+.PHONY : src/core/mesh/Vegetation.cpp.i
+
+src/core/mesh/Vegetation.s: src/core/mesh/Vegetation.cpp.s
+
+.PHONY : src/core/mesh/Vegetation.s
+
+# target to generate assembly for a file
+src/core/mesh/Vegetation.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/mesh/Vegetation.cpp.s
+.PHONY : src/core/mesh/Vegetation.cpp.s
+
+src/core/platform/Application.o: src/core/platform/Application.cpp.o
+
+.PHONY : src/core/platform/Application.o
+
+# target to build an object file
+src/core/platform/Application.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/platform/Application.cpp.o
+.PHONY : src/core/platform/Application.cpp.o
+
+src/core/platform/Application.i: src/core/platform/Application.cpp.i
+
+.PHONY : src/core/platform/Application.i
+
+# target to preprocess a source file
+src/core/platform/Application.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/platform/Application.cpp.i
+.PHONY : src/core/platform/Application.cpp.i
+
+src/core/platform/Application.s: src/core/platform/Application.cpp.s
+
+.PHONY : src/core/platform/Application.s
+
+# target to generate assembly for a file
+src/core/platform/Application.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/platform/Application.cpp.s
+.PHONY : src/core/platform/Application.cpp.s
+
+src/core/system/Camera.o: src/core/system/Camera.cpp.o
+
+.PHONY : src/core/system/Camera.o
+
+# target to build an object file
+src/core/system/Camera.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/Camera.cpp.o
+.PHONY : src/core/system/Camera.cpp.o
+
+src/core/system/Camera.i: src/core/system/Camera.cpp.i
+
+.PHONY : src/core/system/Camera.i
+
+# target to preprocess a source file
+src/core/system/Camera.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/Camera.cpp.i
+.PHONY : src/core/system/Camera.cpp.i
+
+src/core/system/Camera.s: src/core/system/Camera.cpp.s
+
+.PHONY : src/core/system/Camera.s
+
+# target to generate assembly for a file
+src/core/system/Camera.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/Camera.cpp.s
+.PHONY : src/core/system/Camera.cpp.s
+
+src/core/system/CameraFrustum.o: src/core/system/CameraFrustum.cpp.o
+
+.PHONY : src/core/system/CameraFrustum.o
+
+# target to build an object file
+src/core/system/CameraFrustum.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/CameraFrustum.cpp.o
+.PHONY : src/core/system/CameraFrustum.cpp.o
+
+src/core/system/CameraFrustum.i: src/core/system/CameraFrustum.cpp.i
+
+.PHONY : src/core/system/CameraFrustum.i
+
+# target to preprocess a source file
+src/core/system/CameraFrustum.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/CameraFrustum.cpp.i
+.PHONY : src/core/system/CameraFrustum.cpp.i
+
+src/core/system/CameraFrustum.s: src/core/system/CameraFrustum.cpp.s
+
+.PHONY : src/core/system/CameraFrustum.s
+
+# target to generate assembly for a file
+src/core/system/CameraFrustum.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/CameraFrustum.cpp.s
+.PHONY : src/core/system/CameraFrustum.cpp.s
+
+src/core/system/FileSystem.o: src/core/system/FileSystem.cpp.o
+
+.PHONY : src/core/system/FileSystem.o
+
+# target to build an object file
+src/core/system/FileSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/FileSystem.cpp.o
+.PHONY : src/core/system/FileSystem.cpp.o
+
+src/core/system/FileSystem.i: src/core/system/FileSystem.cpp.i
+
+.PHONY : src/core/system/FileSystem.i
+
+# target to preprocess a source file
+src/core/system/FileSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/FileSystem.cpp.i
+.PHONY : src/core/system/FileSystem.cpp.i
+
+src/core/system/FileSystem.s: src/core/system/FileSystem.cpp.s
+
+.PHONY : src/core/system/FileSystem.s
+
+# target to generate assembly for a file
+src/core/system/FileSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/FileSystem.cpp.s
+.PHONY : src/core/system/FileSystem.cpp.s
+
+src/core/system/OrthoCamera.o: src/core/system/OrthoCamera.cpp.o
+
+.PHONY : src/core/system/OrthoCamera.o
+
+# target to build an object file
+src/core/system/OrthoCamera.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/OrthoCamera.cpp.o
+.PHONY : src/core/system/OrthoCamera.cpp.o
+
+src/core/system/OrthoCamera.i: src/core/system/OrthoCamera.cpp.i
+
+.PHONY : src/core/system/OrthoCamera.i
+
+# target to preprocess a source file
+src/core/system/OrthoCamera.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/OrthoCamera.cpp.i
+.PHONY : src/core/system/OrthoCamera.cpp.i
+
+src/core/system/OrthoCamera.s: src/core/system/OrthoCamera.cpp.s
+
+.PHONY : src/core/system/OrthoCamera.s
+
+# target to generate assembly for a file
+src/core/system/OrthoCamera.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/OrthoCamera.cpp.s
+.PHONY : src/core/system/OrthoCamera.cpp.s
+
+src/core/system/ResourceManager.o: src/core/system/ResourceManager.cpp.o
+
+.PHONY : src/core/system/ResourceManager.o
+
+# target to build an object file
+src/core/system/ResourceManager.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/ResourceManager.cpp.o
+.PHONY : src/core/system/ResourceManager.cpp.o
+
+src/core/system/ResourceManager.i: src/core/system/ResourceManager.cpp.i
+
+.PHONY : src/core/system/ResourceManager.i
+
+# target to preprocess a source file
+src/core/system/ResourceManager.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/ResourceManager.cpp.i
+.PHONY : src/core/system/ResourceManager.cpp.i
+
+src/core/system/ResourceManager.s: src/core/system/ResourceManager.cpp.s
+
+.PHONY : src/core/system/ResourceManager.s
+
+# target to generate assembly for a file
+src/core/system/ResourceManager.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/ResourceManager.cpp.s
+.PHONY : src/core/system/ResourceManager.cpp.s
+
+src/core/system/Scene.o: src/core/system/Scene.cpp.o
+
+.PHONY : src/core/system/Scene.o
+
+# target to build an object file
+src/core/system/Scene.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/Scene.cpp.o
+.PHONY : src/core/system/Scene.cpp.o
+
+src/core/system/Scene.i: src/core/system/Scene.cpp.i
+
+.PHONY : src/core/system/Scene.i
+
+# target to preprocess a source file
+src/core/system/Scene.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/Scene.cpp.i
+.PHONY : src/core/system/Scene.cpp.i
+
+src/core/system/Scene.s: src/core/system/Scene.cpp.s
+
+.PHONY : src/core/system/Scene.s
+
+# target to generate assembly for a file
+src/core/system/Scene.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/Scene.cpp.s
+.PHONY : src/core/system/Scene.cpp.s
+
+src/core/system/Stats.o: src/core/system/Stats.cpp.o
+
+.PHONY : src/core/system/Stats.o
+
+# target to build an object file
+src/core/system/Stats.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/Stats.cpp.o
+.PHONY : src/core/system/Stats.cpp.o
+
+src/core/system/Stats.i: src/core/system/Stats.cpp.i
+
+.PHONY : src/core/system/Stats.i
+
+# target to preprocess a source file
+src/core/system/Stats.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/Stats.cpp.i
+.PHONY : src/core/system/Stats.cpp.i
+
+src/core/system/Stats.s: src/core/system/Stats.cpp.s
+
+.PHONY : src/core/system/Stats.s
+
+# target to generate assembly for a file
+src/core/system/Stats.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/Stats.cpp.s
+.PHONY : src/core/system/Stats.cpp.s
+
+src/core/system/Timer.o: src/core/system/Timer.cpp.o
+
+.PHONY : src/core/system/Timer.o
+
+# target to build an object file
+src/core/system/Timer.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/Timer.cpp.o
+.PHONY : src/core/system/Timer.cpp.o
+
+src/core/system/Timer.i: src/core/system/Timer.cpp.i
+
+.PHONY : src/core/system/Timer.i
+
+# target to preprocess a source file
+src/core/system/Timer.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/Timer.cpp.i
+.PHONY : src/core/system/Timer.cpp.i
+
+src/core/system/Timer.s: src/core/system/Timer.cpp.s
+
+.PHONY : src/core/system/Timer.s
+
+# target to generate assembly for a file
+src/core/system/Timer.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/Timer.cpp.s
+.PHONY : src/core/system/Timer.cpp.s
+
+src/core/system/UISystem.o: src/core/system/UISystem.cpp.o
+
+.PHONY : src/core/system/UISystem.o
+
+# target to build an object file
+src/core/system/UISystem.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/UISystem.cpp.o
+.PHONY : src/core/system/UISystem.cpp.o
+
+src/core/system/UISystem.i: src/core/system/UISystem.cpp.i
+
+.PHONY : src/core/system/UISystem.i
+
+# target to preprocess a source file
+src/core/system/UISystem.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/UISystem.cpp.i
+.PHONY : src/core/system/UISystem.cpp.i
+
+src/core/system/UISystem.s: src/core/system/UISystem.cpp.s
+
+.PHONY : src/core/system/UISystem.s
+
+# target to generate assembly for a file
+src/core/system/UISystem.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/UISystem.cpp.s
+.PHONY : src/core/system/UISystem.cpp.s
+
+src/core/system/VisibilityManager.o: src/core/system/VisibilityManager.cpp.o
+
+.PHONY : src/core/system/VisibilityManager.o
+
+# target to build an object file
+src/core/system/VisibilityManager.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/VisibilityManager.cpp.o
+.PHONY : src/core/system/VisibilityManager.cpp.o
+
+src/core/system/VisibilityManager.i: src/core/system/VisibilityManager.cpp.i
+
+.PHONY : src/core/system/VisibilityManager.i
+
+# target to preprocess a source file
+src/core/system/VisibilityManager.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/VisibilityManager.cpp.i
+.PHONY : src/core/system/VisibilityManager.cpp.i
+
+src/core/system/VisibilityManager.s: src/core/system/VisibilityManager.cpp.s
+
+.PHONY : src/core/system/VisibilityManager.s
+
+# target to generate assembly for a file
+src/core/system/VisibilityManager.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/core/system/VisibilityManager.cpp.s
+.PHONY : src/core/system/VisibilityManager.cpp.s
+
+src/game/CommandCenter.o: src/game/CommandCenter.cpp.o
+
+.PHONY : src/game/CommandCenter.o
+
+# target to build an object file
+src/game/CommandCenter.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/CommandCenter.cpp.o
+.PHONY : src/game/CommandCenter.cpp.o
+
+src/game/CommandCenter.i: src/game/CommandCenter.cpp.i
+
+.PHONY : src/game/CommandCenter.i
+
+# target to preprocess a source file
+src/game/CommandCenter.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/CommandCenter.cpp.i
+.PHONY : src/game/CommandCenter.cpp.i
+
+src/game/CommandCenter.s: src/game/CommandCenter.cpp.s
+
+.PHONY : src/game/CommandCenter.s
+
+# target to generate assembly for a file
+src/game/CommandCenter.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/CommandCenter.cpp.s
+.PHONY : src/game/CommandCenter.cpp.s
+
+src/game/GameContext.o: src/game/GameContext.cpp.o
+
+.PHONY : src/game/GameContext.o
+
+# target to build an object file
+src/game/GameContext.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/GameContext.cpp.o
+.PHONY : src/game/GameContext.cpp.o
+
+src/game/GameContext.i: src/game/GameContext.cpp.i
+
+.PHONY : src/game/GameContext.i
+
+# target to preprocess a source file
+src/game/GameContext.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/GameContext.cpp.i
+.PHONY : src/game/GameContext.cpp.i
+
+src/game/GameContext.s: src/game/GameContext.cpp.s
+
+.PHONY : src/game/GameContext.s
+
+# target to generate assembly for a file
+src/game/GameContext.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/GameContext.cpp.s
+.PHONY : src/game/GameContext.cpp.s
+
+src/game/command/CheckConstraintsGameCommand.o: src/game/command/CheckConstraintsGameCommand.cpp.o
+
+.PHONY : src/game/command/CheckConstraintsGameCommand.o
+
+# target to build an object file
+src/game/command/CheckConstraintsGameCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/command/CheckConstraintsGameCommand.cpp.o
+.PHONY : src/game/command/CheckConstraintsGameCommand.cpp.o
+
+src/game/command/CheckConstraintsGameCommand.i: src/game/command/CheckConstraintsGameCommand.cpp.i
+
+.PHONY : src/game/command/CheckConstraintsGameCommand.i
+
+# target to preprocess a source file
+src/game/command/CheckConstraintsGameCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/command/CheckConstraintsGameCommand.cpp.i
+.PHONY : src/game/command/CheckConstraintsGameCommand.cpp.i
+
+src/game/command/CheckConstraintsGameCommand.s: src/game/command/CheckConstraintsGameCommand.cpp.s
+
+.PHONY : src/game/command/CheckConstraintsGameCommand.s
+
+# target to generate assembly for a file
+src/game/command/CheckConstraintsGameCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/command/CheckConstraintsGameCommand.cpp.s
+.PHONY : src/game/command/CheckConstraintsGameCommand.cpp.s
+
+src/game/command/CheckSnakeFoodCollisionGameCommand.o: src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.o
+
+.PHONY : src/game/command/CheckSnakeFoodCollisionGameCommand.o
+
+# target to build an object file
+src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.o
+.PHONY : src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.o
+
+src/game/command/CheckSnakeFoodCollisionGameCommand.i: src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.i
+
+.PHONY : src/game/command/CheckSnakeFoodCollisionGameCommand.i
+
+# target to preprocess a source file
+src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.i
+.PHONY : src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.i
+
+src/game/command/CheckSnakeFoodCollisionGameCommand.s: src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.s
+
+.PHONY : src/game/command/CheckSnakeFoodCollisionGameCommand.s
+
+# target to generate assembly for a file
+src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.s
+.PHONY : src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.s
+
+src/game/command/ExtendActorGameCommand.o: src/game/command/ExtendActorGameCommand.cpp.o
+
+.PHONY : src/game/command/ExtendActorGameCommand.o
+
+# target to build an object file
+src/game/command/ExtendActorGameCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/command/ExtendActorGameCommand.cpp.o
+.PHONY : src/game/command/ExtendActorGameCommand.cpp.o
+
+src/game/command/ExtendActorGameCommand.i: src/game/command/ExtendActorGameCommand.cpp.i
+
+.PHONY : src/game/command/ExtendActorGameCommand.i
+
+# target to preprocess a source file
+src/game/command/ExtendActorGameCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/command/ExtendActorGameCommand.cpp.i
+.PHONY : src/game/command/ExtendActorGameCommand.cpp.i
+
+src/game/command/ExtendActorGameCommand.s: src/game/command/ExtendActorGameCommand.cpp.s
+
+.PHONY : src/game/command/ExtendActorGameCommand.s
+
+# target to generate assembly for a file
+src/game/command/ExtendActorGameCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/command/ExtendActorGameCommand.cpp.s
+.PHONY : src/game/command/ExtendActorGameCommand.cpp.s
+
+src/game/command/MakeTurnGameCommand.o: src/game/command/MakeTurnGameCommand.cpp.o
+
+.PHONY : src/game/command/MakeTurnGameCommand.o
+
+# target to build an object file
+src/game/command/MakeTurnGameCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/command/MakeTurnGameCommand.cpp.o
+.PHONY : src/game/command/MakeTurnGameCommand.cpp.o
+
+src/game/command/MakeTurnGameCommand.i: src/game/command/MakeTurnGameCommand.cpp.i
+
+.PHONY : src/game/command/MakeTurnGameCommand.i
+
+# target to preprocess a source file
+src/game/command/MakeTurnGameCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/command/MakeTurnGameCommand.cpp.i
+.PHONY : src/game/command/MakeTurnGameCommand.cpp.i
+
+src/game/command/MakeTurnGameCommand.s: src/game/command/MakeTurnGameCommand.cpp.s
+
+.PHONY : src/game/command/MakeTurnGameCommand.s
+
+# target to generate assembly for a file
+src/game/command/MakeTurnGameCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/command/MakeTurnGameCommand.cpp.s
+.PHONY : src/game/command/MakeTurnGameCommand.cpp.s
+
+src/game/command/SpawnFoodGameCommand.o: src/game/command/SpawnFoodGameCommand.cpp.o
+
+.PHONY : src/game/command/SpawnFoodGameCommand.o
+
+# target to build an object file
+src/game/command/SpawnFoodGameCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/command/SpawnFoodGameCommand.cpp.o
+.PHONY : src/game/command/SpawnFoodGameCommand.cpp.o
+
+src/game/command/SpawnFoodGameCommand.i: src/game/command/SpawnFoodGameCommand.cpp.i
+
+.PHONY : src/game/command/SpawnFoodGameCommand.i
+
+# target to preprocess a source file
+src/game/command/SpawnFoodGameCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/command/SpawnFoodGameCommand.cpp.i
+.PHONY : src/game/command/SpawnFoodGameCommand.cpp.i
+
+src/game/command/SpawnFoodGameCommand.s: src/game/command/SpawnFoodGameCommand.cpp.s
+
+.PHONY : src/game/command/SpawnFoodGameCommand.s
+
+# target to generate assembly for a file
+src/game/command/SpawnFoodGameCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/command/SpawnFoodGameCommand.cpp.s
+.PHONY : src/game/command/SpawnFoodGameCommand.cpp.s
+
+src/game/command/UpdateFoodTransformGameCommand.o: src/game/command/UpdateFoodTransformGameCommand.cpp.o
+
+.PHONY : src/game/command/UpdateFoodTransformGameCommand.o
+
+# target to build an object file
+src/game/command/UpdateFoodTransformGameCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/command/UpdateFoodTransformGameCommand.cpp.o
+.PHONY : src/game/command/UpdateFoodTransformGameCommand.cpp.o
+
+src/game/command/UpdateFoodTransformGameCommand.i: src/game/command/UpdateFoodTransformGameCommand.cpp.i
+
+.PHONY : src/game/command/UpdateFoodTransformGameCommand.i
+
+# target to preprocess a source file
+src/game/command/UpdateFoodTransformGameCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/command/UpdateFoodTransformGameCommand.cpp.i
+.PHONY : src/game/command/UpdateFoodTransformGameCommand.cpp.i
+
+src/game/command/UpdateFoodTransformGameCommand.s: src/game/command/UpdateFoodTransformGameCommand.cpp.s
+
+.PHONY : src/game/command/UpdateFoodTransformGameCommand.s
+
+# target to generate assembly for a file
+src/game/command/UpdateFoodTransformGameCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/command/UpdateFoodTransformGameCommand.cpp.s
+.PHONY : src/game/command/UpdateFoodTransformGameCommand.cpp.s
+
+src/game/command/UpdateSnakeTransformGameCommand.o: src/game/command/UpdateSnakeTransformGameCommand.cpp.o
+
+.PHONY : src/game/command/UpdateSnakeTransformGameCommand.o
+
+# target to build an object file
+src/game/command/UpdateSnakeTransformGameCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/command/UpdateSnakeTransformGameCommand.cpp.o
+.PHONY : src/game/command/UpdateSnakeTransformGameCommand.cpp.o
+
+src/game/command/UpdateSnakeTransformGameCommand.i: src/game/command/UpdateSnakeTransformGameCommand.cpp.i
+
+.PHONY : src/game/command/UpdateSnakeTransformGameCommand.i
+
+# target to preprocess a source file
+src/game/command/UpdateSnakeTransformGameCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/command/UpdateSnakeTransformGameCommand.cpp.i
+.PHONY : src/game/command/UpdateSnakeTransformGameCommand.cpp.i
+
+src/game/command/UpdateSnakeTransformGameCommand.s: src/game/command/UpdateSnakeTransformGameCommand.cpp.s
+
+.PHONY : src/game/command/UpdateSnakeTransformGameCommand.s
+
+# target to generate assembly for a file
+src/game/command/UpdateSnakeTransformGameCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/command/UpdateSnakeTransformGameCommand.cpp.s
+.PHONY : src/game/command/UpdateSnakeTransformGameCommand.cpp.s
+
+src/game/model/FoodModel.o: src/game/model/FoodModel.cpp.o
+
+.PHONY : src/game/model/FoodModel.o
+
+# target to build an object file
+src/game/model/FoodModel.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/model/FoodModel.cpp.o
+.PHONY : src/game/model/FoodModel.cpp.o
+
+src/game/model/FoodModel.i: src/game/model/FoodModel.cpp.i
+
+.PHONY : src/game/model/FoodModel.i
+
+# target to preprocess a source file
+src/game/model/FoodModel.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/model/FoodModel.cpp.i
+.PHONY : src/game/model/FoodModel.cpp.i
+
+src/game/model/FoodModel.s: src/game/model/FoodModel.cpp.s
+
+.PHONY : src/game/model/FoodModel.s
+
+# target to generate assembly for a file
+src/game/model/FoodModel.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/model/FoodModel.cpp.s
+.PHONY : src/game/model/FoodModel.cpp.s
+
+src/game/model/SnakeModel.o: src/game/model/SnakeModel.cpp.o
+
+.PHONY : src/game/model/SnakeModel.o
+
+# target to build an object file
+src/game/model/SnakeModel.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/model/SnakeModel.cpp.o
+.PHONY : src/game/model/SnakeModel.cpp.o
+
+src/game/model/SnakeModel.i: src/game/model/SnakeModel.cpp.i
+
+.PHONY : src/game/model/SnakeModel.i
+
+# target to preprocess a source file
+src/game/model/SnakeModel.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/model/SnakeModel.cpp.i
+.PHONY : src/game/model/SnakeModel.cpp.i
+
+src/game/model/SnakeModel.s: src/game/model/SnakeModel.cpp.s
+
+.PHONY : src/game/model/SnakeModel.s
+
+# target to generate assembly for a file
+src/game/model/SnakeModel.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/model/SnakeModel.cpp.s
+.PHONY : src/game/model/SnakeModel.cpp.s
+
+src/game/view/FoodView.o: src/game/view/FoodView.cpp.o
+
+.PHONY : src/game/view/FoodView.o
+
+# target to build an object file
+src/game/view/FoodView.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/view/FoodView.cpp.o
+.PHONY : src/game/view/FoodView.cpp.o
+
+src/game/view/FoodView.i: src/game/view/FoodView.cpp.i
+
+.PHONY : src/game/view/FoodView.i
+
+# target to preprocess a source file
+src/game/view/FoodView.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/view/FoodView.cpp.i
+.PHONY : src/game/view/FoodView.cpp.i
+
+src/game/view/FoodView.s: src/game/view/FoodView.cpp.s
+
+.PHONY : src/game/view/FoodView.s
+
+# target to generate assembly for a file
+src/game/view/FoodView.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/view/FoodView.cpp.s
+.PHONY : src/game/view/FoodView.cpp.s
+
+src/game/view/FoodViewMediator.o: src/game/view/FoodViewMediator.cpp.o
+
+.PHONY : src/game/view/FoodViewMediator.o
+
+# target to build an object file
+src/game/view/FoodViewMediator.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/view/FoodViewMediator.cpp.o
+.PHONY : src/game/view/FoodViewMediator.cpp.o
+
+src/game/view/FoodViewMediator.i: src/game/view/FoodViewMediator.cpp.i
+
+.PHONY : src/game/view/FoodViewMediator.i
+
+# target to preprocess a source file
+src/game/view/FoodViewMediator.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/view/FoodViewMediator.cpp.i
+.PHONY : src/game/view/FoodViewMediator.cpp.i
+
+src/game/view/FoodViewMediator.s: src/game/view/FoodViewMediator.cpp.s
+
+.PHONY : src/game/view/FoodViewMediator.s
+
+# target to generate assembly for a file
+src/game/view/FoodViewMediator.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/view/FoodViewMediator.cpp.s
+.PHONY : src/game/view/FoodViewMediator.cpp.s
+
+src/game/view/SnakeView.o: src/game/view/SnakeView.cpp.o
+
+.PHONY : src/game/view/SnakeView.o
+
+# target to build an object file
+src/game/view/SnakeView.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/view/SnakeView.cpp.o
+.PHONY : src/game/view/SnakeView.cpp.o
+
+src/game/view/SnakeView.i: src/game/view/SnakeView.cpp.i
+
+.PHONY : src/game/view/SnakeView.i
+
+# target to preprocess a source file
+src/game/view/SnakeView.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/view/SnakeView.cpp.i
+.PHONY : src/game/view/SnakeView.cpp.i
+
+src/game/view/SnakeView.s: src/game/view/SnakeView.cpp.s
+
+.PHONY : src/game/view/SnakeView.s
+
+# target to generate assembly for a file
+src/game/view/SnakeView.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/view/SnakeView.cpp.s
+.PHONY : src/game/view/SnakeView.cpp.s
+
+src/game/view/SnakeViewMediator.o: src/game/view/SnakeViewMediator.cpp.o
+
+.PHONY : src/game/view/SnakeViewMediator.o
+
+# target to build an object file
+src/game/view/SnakeViewMediator.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/view/SnakeViewMediator.cpp.o
+.PHONY : src/game/view/SnakeViewMediator.cpp.o
+
+src/game/view/SnakeViewMediator.i: src/game/view/SnakeViewMediator.cpp.i
+
+.PHONY : src/game/view/SnakeViewMediator.i
+
+# target to preprocess a source file
+src/game/view/SnakeViewMediator.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/view/SnakeViewMediator.cpp.i
+.PHONY : src/game/view/SnakeViewMediator.cpp.i
+
+src/game/view/SnakeViewMediator.s: src/game/view/SnakeViewMediator.cpp.s
+
+.PHONY : src/game/view/SnakeViewMediator.s
+
+# target to generate assembly for a file
+src/game/view/SnakeViewMediator.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/game/view/SnakeViewMediator.cpp.s
+.PHONY : src/game/view/SnakeViewMediator.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.o: thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.o
+
+.PHONY : thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.o
+
+# target to build an object file
+thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.o
+.PHONY : thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.o
+
+thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.i: thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.i
+
+.PHONY : thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.i
+
+# target to preprocess a source file
+thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.i
+.PHONY : thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.i
+
+thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.s: thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.s
+
+.PHONY : thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.s
+
+# target to generate assembly for a file
+thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.s
+.PHONY : thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.s
+
+thirdparty/imgui/imgui.o: thirdparty/imgui/imgui.cpp.o
+
+.PHONY : thirdparty/imgui/imgui.o
+
+# target to build an object file
+thirdparty/imgui/imgui.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui.cpp.o
+.PHONY : thirdparty/imgui/imgui.cpp.o
+
+thirdparty/imgui/imgui.i: thirdparty/imgui/imgui.cpp.i
+
+.PHONY : thirdparty/imgui/imgui.i
+
+# target to preprocess a source file
+thirdparty/imgui/imgui.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui.cpp.i
+.PHONY : thirdparty/imgui/imgui.cpp.i
+
+thirdparty/imgui/imgui.s: thirdparty/imgui/imgui.cpp.s
+
+.PHONY : thirdparty/imgui/imgui.s
+
+# target to generate assembly for a file
+thirdparty/imgui/imgui.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui.cpp.s
+.PHONY : thirdparty/imgui/imgui.cpp.s
+
+thirdparty/imgui/imgui_demo.o: thirdparty/imgui/imgui_demo.cpp.o
+
+.PHONY : thirdparty/imgui/imgui_demo.o
+
+# target to build an object file
+thirdparty/imgui/imgui_demo.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_demo.cpp.o
+.PHONY : thirdparty/imgui/imgui_demo.cpp.o
+
+thirdparty/imgui/imgui_demo.i: thirdparty/imgui/imgui_demo.cpp.i
+
+.PHONY : thirdparty/imgui/imgui_demo.i
+
+# target to preprocess a source file
+thirdparty/imgui/imgui_demo.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_demo.cpp.i
+.PHONY : thirdparty/imgui/imgui_demo.cpp.i
+
+thirdparty/imgui/imgui_demo.s: thirdparty/imgui/imgui_demo.cpp.s
+
+.PHONY : thirdparty/imgui/imgui_demo.s
+
+# target to generate assembly for a file
+thirdparty/imgui/imgui_demo.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_demo.cpp.s
+.PHONY : thirdparty/imgui/imgui_demo.cpp.s
+
+thirdparty/imgui/imgui_draw.o: thirdparty/imgui/imgui_draw.cpp.o
+
+.PHONY : thirdparty/imgui/imgui_draw.o
+
+# target to build an object file
+thirdparty/imgui/imgui_draw.cpp.o:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_draw.cpp.o
+.PHONY : thirdparty/imgui/imgui_draw.cpp.o
+
+thirdparty/imgui/imgui_draw.i: thirdparty/imgui/imgui_draw.cpp.i
+
+.PHONY : thirdparty/imgui/imgui_draw.i
+
+# target to preprocess a source file
+thirdparty/imgui/imgui_draw.cpp.i:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_draw.cpp.i
+.PHONY : thirdparty/imgui/imgui_draw.cpp.i
+
+thirdparty/imgui/imgui_draw.s: thirdparty/imgui/imgui_draw.cpp.s
+
+.PHONY : thirdparty/imgui/imgui_draw.s
+
+# target to generate assembly for a file
+thirdparty/imgui/imgui_draw.cpp.s:
+	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_draw.cpp.s
+.PHONY : thirdparty/imgui/imgui_draw.cpp.s
 
 # Help Target
 help:
@@ -156,12 +1802,188 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ProjectSnake"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... glfw"
+	@echo "... docs"
+	@echo "... libglewmx_static"
+	@echo "... libglew_static"
+	@echo "... gmock"
+	@echo "... gmock_main"
+	@echo "... gtest_main"
+	@echo "... gtest"
+	@echo "... uninstall"
+	@echo "... IrrXML"
+	@echo "... assimp"
+	@echo "... assimp_cmd"
+	@echo "... unit"
+	@echo "... src/core/effect/Bloom.o"
+	@echo "... src/core/effect/Bloom.i"
+	@echo "... src/core/effect/Bloom.s"
+	@echo "... src/core/effect/Shadow.o"
+	@echo "... src/core/effect/Shadow.i"
+	@echo "... src/core/effect/Shadow.s"
+	@echo "... src/core/factory/AssetFactory.o"
+	@echo "... src/core/factory/AssetFactory.i"
+	@echo "... src/core/factory/AssetFactory.s"
+	@echo "... src/core/factory/BufferFactory.o"
+	@echo "... src/core/factory/BufferFactory.i"
+	@echo "... src/core/factory/BufferFactory.s"
+	@echo "... src/core/factory/ModelFactory.o"
+	@echo "... src/core/factory/ModelFactory.i"
+	@echo "... src/core/factory/ModelFactory.s"
+	@echo "... src/core/factory/RenderTargetFactory.o"
+	@echo "... src/core/factory/RenderTargetFactory.i"
+	@echo "... src/core/factory/RenderTargetFactory.s"
+	@echo "... src/core/factory/ShaderCreator.o"
+	@echo "... src/core/factory/ShaderCreator.i"
+	@echo "... src/core/factory/ShaderCreator.s"
+	@echo "... src/core/factory/TextureFactory.o"
+	@echo "... src/core/factory/TextureFactory.i"
+	@echo "... src/core/factory/TextureFactory.s"
+	@echo "... src/core/graphics/BoundingBox.o"
+	@echo "... src/core/graphics/BoundingBox.i"
+	@echo "... src/core/graphics/BoundingBox.s"
+	@echo "... src/core/graphics/Cubemap.o"
+	@echo "... src/core/graphics/Cubemap.i"
+	@echo "... src/core/graphics/Cubemap.s"
+	@echo "... src/core/graphics/Light.o"
+	@echo "... src/core/graphics/Light.i"
+	@echo "... src/core/graphics/Light.s"
+	@echo "... src/core/graphics/RenderCache.o"
+	@echo "... src/core/graphics/RenderCache.i"
+	@echo "... src/core/graphics/RenderCache.s"
+	@echo "... src/core/graphics/RenderTarget.o"
+	@echo "... src/core/graphics/RenderTarget.i"
+	@echo "... src/core/graphics/RenderTarget.s"
+	@echo "... src/core/graphics/Renderer.o"
+	@echo "... src/core/graphics/Renderer.i"
+	@echo "... src/core/graphics/Renderer.s"
+	@echo "... src/core/graphics/Shader.o"
+	@echo "... src/core/graphics/Shader.i"
+	@echo "... src/core/graphics/Shader.s"
+	@echo "... src/core/graphics/Texture.o"
+	@echo "... src/core/graphics/Texture.i"
+	@echo "... src/core/graphics/Texture.s"
+	@echo "... src/core/input/InputDevice.o"
+	@echo "... src/core/input/InputDevice.i"
+	@echo "... src/core/input/InputDevice.s"
+	@echo "... src/core/mesh/Mesh.o"
+	@echo "... src/core/mesh/Mesh.i"
+	@echo "... src/core/mesh/Mesh.s"
+	@echo "... src/core/mesh/Model.o"
+	@echo "... src/core/mesh/Model.i"
+	@echo "... src/core/mesh/Model.s"
+	@echo "... src/core/mesh/Quad.o"
+	@echo "... src/core/mesh/Quad.i"
+	@echo "... src/core/mesh/Quad.s"
+	@echo "... src/core/mesh/Sprite.o"
+	@echo "... src/core/mesh/Sprite.i"
+	@echo "... src/core/mesh/Sprite.s"
+	@echo "... src/core/mesh/Terrain.o"
+	@echo "... src/core/mesh/Terrain.i"
+	@echo "... src/core/mesh/Terrain.s"
+	@echo "... src/core/mesh/Vegetation.o"
+	@echo "... src/core/mesh/Vegetation.i"
+	@echo "... src/core/mesh/Vegetation.s"
+	@echo "... src/core/platform/Application.o"
+	@echo "... src/core/platform/Application.i"
+	@echo "... src/core/platform/Application.s"
+	@echo "... src/core/system/Camera.o"
+	@echo "... src/core/system/Camera.i"
+	@echo "... src/core/system/Camera.s"
+	@echo "... src/core/system/CameraFrustum.o"
+	@echo "... src/core/system/CameraFrustum.i"
+	@echo "... src/core/system/CameraFrustum.s"
+	@echo "... src/core/system/FileSystem.o"
+	@echo "... src/core/system/FileSystem.i"
+	@echo "... src/core/system/FileSystem.s"
+	@echo "... src/core/system/OrthoCamera.o"
+	@echo "... src/core/system/OrthoCamera.i"
+	@echo "... src/core/system/OrthoCamera.s"
+	@echo "... src/core/system/ResourceManager.o"
+	@echo "... src/core/system/ResourceManager.i"
+	@echo "... src/core/system/ResourceManager.s"
+	@echo "... src/core/system/Scene.o"
+	@echo "... src/core/system/Scene.i"
+	@echo "... src/core/system/Scene.s"
+	@echo "... src/core/system/Stats.o"
+	@echo "... src/core/system/Stats.i"
+	@echo "... src/core/system/Stats.s"
+	@echo "... src/core/system/Timer.o"
+	@echo "... src/core/system/Timer.i"
+	@echo "... src/core/system/Timer.s"
+	@echo "... src/core/system/UISystem.o"
+	@echo "... src/core/system/UISystem.i"
+	@echo "... src/core/system/UISystem.s"
+	@echo "... src/core/system/VisibilityManager.o"
+	@echo "... src/core/system/VisibilityManager.i"
+	@echo "... src/core/system/VisibilityManager.s"
+	@echo "... src/game/CommandCenter.o"
+	@echo "... src/game/CommandCenter.i"
+	@echo "... src/game/CommandCenter.s"
+	@echo "... src/game/GameContext.o"
+	@echo "... src/game/GameContext.i"
+	@echo "... src/game/GameContext.s"
+	@echo "... src/game/command/CheckConstraintsGameCommand.o"
+	@echo "... src/game/command/CheckConstraintsGameCommand.i"
+	@echo "... src/game/command/CheckConstraintsGameCommand.s"
+	@echo "... src/game/command/CheckSnakeFoodCollisionGameCommand.o"
+	@echo "... src/game/command/CheckSnakeFoodCollisionGameCommand.i"
+	@echo "... src/game/command/CheckSnakeFoodCollisionGameCommand.s"
+	@echo "... src/game/command/ExtendActorGameCommand.o"
+	@echo "... src/game/command/ExtendActorGameCommand.i"
+	@echo "... src/game/command/ExtendActorGameCommand.s"
+	@echo "... src/game/command/MakeTurnGameCommand.o"
+	@echo "... src/game/command/MakeTurnGameCommand.i"
+	@echo "... src/game/command/MakeTurnGameCommand.s"
+	@echo "... src/game/command/SpawnFoodGameCommand.o"
+	@echo "... src/game/command/SpawnFoodGameCommand.i"
+	@echo "... src/game/command/SpawnFoodGameCommand.s"
+	@echo "... src/game/command/UpdateFoodTransformGameCommand.o"
+	@echo "... src/game/command/UpdateFoodTransformGameCommand.i"
+	@echo "... src/game/command/UpdateFoodTransformGameCommand.s"
+	@echo "... src/game/command/UpdateSnakeTransformGameCommand.o"
+	@echo "... src/game/command/UpdateSnakeTransformGameCommand.i"
+	@echo "... src/game/command/UpdateSnakeTransformGameCommand.s"
+	@echo "... src/game/model/FoodModel.o"
+	@echo "... src/game/model/FoodModel.i"
+	@echo "... src/game/model/FoodModel.s"
+	@echo "... src/game/model/SnakeModel.o"
+	@echo "... src/game/model/SnakeModel.i"
+	@echo "... src/game/model/SnakeModel.s"
+	@echo "... src/game/view/FoodView.o"
+	@echo "... src/game/view/FoodView.i"
+	@echo "... src/game/view/FoodView.s"
+	@echo "... src/game/view/FoodViewMediator.o"
+	@echo "... src/game/view/FoodViewMediator.i"
+	@echo "... src/game/view/FoodViewMediator.s"
+	@echo "... src/game/view/SnakeView.o"
+	@echo "... src/game/view/SnakeView.i"
+	@echo "... src/game/view/SnakeView.s"
+	@echo "... src/game/view/SnakeViewMediator.o"
+	@echo "... src/game/view/SnakeViewMediator.i"
+	@echo "... src/game/view/SnakeViewMediator.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.o"
+	@echo "... thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.i"
+	@echo "... thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.s"
+	@echo "... thirdparty/imgui/imgui.o"
+	@echo "... thirdparty/imgui/imgui.i"
+	@echo "... thirdparty/imgui/imgui.s"
+	@echo "... thirdparty/imgui/imgui_demo.o"
+	@echo "... thirdparty/imgui/imgui_demo.i"
+	@echo "... thirdparty/imgui/imgui_demo.s"
+	@echo "... thirdparty/imgui/imgui_draw.o"
+	@echo "... thirdparty/imgui/imgui_draw.i"
+	@echo "... thirdparty/imgui/imgui_draw.s"
 .PHONY : help
 
 

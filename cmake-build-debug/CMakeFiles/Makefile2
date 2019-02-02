@@ -68,10 +68,13 @@ CMAKE_BINARY_DIR = /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debu
 # Target rules for target CMakeFiles/ProjectSnake.dir
 
 # All Build rule for target.
-CMakeFiles/ProjectSnake.dir/all:
+CMakeFiles/ProjectSnake.dir/all: thirdparty/glfw/src/CMakeFiles/glfw.dir/all
+CMakeFiles/ProjectSnake.dir/all: thirdparty/glew/CMakeFiles/libglew_static.dir/all
+CMakeFiles/ProjectSnake.dir/all: thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/all
+CMakeFiles/ProjectSnake.dir/all: thirdparty/assimp/code/CMakeFiles/assimp.dir/all
 	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/depend
 	$(MAKE) -f CMakeFiles/ProjectSnake.dir/build.make CMakeFiles/ProjectSnake.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target ProjectSnake"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target ProjectSnake"
 .PHONY : CMakeFiles/ProjectSnake.dir/all
 
 # Include target in all.
@@ -81,7 +84,7 @@ all: CMakeFiles/ProjectSnake.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ProjectSnake.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 71
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ProjectSnake.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/ProjectSnake.dir/rule
@@ -100,6 +103,781 @@ CMakeFiles/ProjectSnake.dir/clean:
 clean: CMakeFiles/ProjectSnake.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory thirdparty/glfw
+
+# Convenience name for "all" pass in the directory.
+thirdparty/glfw/all: thirdparty/glfw/src/all
+thirdparty/glfw/all: thirdparty/glfw/docs/all
+
+.PHONY : thirdparty/glfw/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/glfw/clean: thirdparty/glfw/src/clean
+thirdparty/glfw/clean: thirdparty/glfw/docs/clean
+
+.PHONY : thirdparty/glfw/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/glfw/preinstall: thirdparty/glfw/src/preinstall
+thirdparty/glfw/preinstall: thirdparty/glfw/docs/preinstall
+
+.PHONY : thirdparty/glfw/preinstall
+
+#=============================================================================
+# Directory level rules for directory thirdparty/glfw/src
+
+# Convenience name for "all" pass in the directory.
+thirdparty/glfw/src/all: thirdparty/glfw/src/CMakeFiles/glfw.dir/all
+
+.PHONY : thirdparty/glfw/src/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/glfw/src/clean: thirdparty/glfw/src/CMakeFiles/glfw.dir/clean
+
+.PHONY : thirdparty/glfw/src/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/glfw/src/preinstall:
+
+.PHONY : thirdparty/glfw/src/preinstall
+
+#=============================================================================
+# Target rules for target thirdparty/glfw/src/CMakeFiles/glfw.dir
+
+# All Build rule for target.
+thirdparty/glfw/src/CMakeFiles/glfw.dir/all:
+	$(MAKE) -f thirdparty/glfw/src/CMakeFiles/glfw.dir/build.make thirdparty/glfw/src/CMakeFiles/glfw.dir/depend
+	$(MAKE) -f thirdparty/glfw/src/CMakeFiles/glfw.dir/build.make thirdparty/glfw/src/CMakeFiles/glfw.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=70,71,72,73 "Built target glfw"
+.PHONY : thirdparty/glfw/src/CMakeFiles/glfw.dir/all
+
+# Include target in all.
+all: thirdparty/glfw/src/CMakeFiles/glfw.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+thirdparty/glfw/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 thirdparty/glfw/src/CMakeFiles/glfw.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 0
+.PHONY : thirdparty/glfw/src/CMakeFiles/glfw.dir/rule
+
+# Convenience name for target.
+glfw: thirdparty/glfw/src/CMakeFiles/glfw.dir/rule
+
+.PHONY : glfw
+
+# clean rule for target.
+thirdparty/glfw/src/CMakeFiles/glfw.dir/clean:
+	$(MAKE) -f thirdparty/glfw/src/CMakeFiles/glfw.dir/build.make thirdparty/glfw/src/CMakeFiles/glfw.dir/clean
+.PHONY : thirdparty/glfw/src/CMakeFiles/glfw.dir/clean
+
+# clean rule for target.
+clean: thirdparty/glfw/src/CMakeFiles/glfw.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory thirdparty/glfw/docs
+
+# Convenience name for "all" pass in the directory.
+thirdparty/glfw/docs/all: thirdparty/glfw/docs/CMakeFiles/docs.dir/all
+
+.PHONY : thirdparty/glfw/docs/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/glfw/docs/clean: thirdparty/glfw/docs/CMakeFiles/docs.dir/clean
+
+.PHONY : thirdparty/glfw/docs/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/glfw/docs/preinstall:
+
+.PHONY : thirdparty/glfw/docs/preinstall
+
+#=============================================================================
+# Target rules for target thirdparty/glfw/docs/CMakeFiles/docs.dir
+
+# All Build rule for target.
+thirdparty/glfw/docs/CMakeFiles/docs.dir/all:
+	$(MAKE) -f thirdparty/glfw/docs/CMakeFiles/docs.dir/build.make thirdparty/glfw/docs/CMakeFiles/docs.dir/depend
+	$(MAKE) -f thirdparty/glfw/docs/CMakeFiles/docs.dir/build.make thirdparty/glfw/docs/CMakeFiles/docs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=69 "Built target docs"
+.PHONY : thirdparty/glfw/docs/CMakeFiles/docs.dir/all
+
+# Include target in all.
+all: thirdparty/glfw/docs/CMakeFiles/docs.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+thirdparty/glfw/docs/CMakeFiles/docs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 thirdparty/glfw/docs/CMakeFiles/docs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 0
+.PHONY : thirdparty/glfw/docs/CMakeFiles/docs.dir/rule
+
+# Convenience name for target.
+docs: thirdparty/glfw/docs/CMakeFiles/docs.dir/rule
+
+.PHONY : docs
+
+# clean rule for target.
+thirdparty/glfw/docs/CMakeFiles/docs.dir/clean:
+	$(MAKE) -f thirdparty/glfw/docs/CMakeFiles/docs.dir/build.make thirdparty/glfw/docs/CMakeFiles/docs.dir/clean
+.PHONY : thirdparty/glfw/docs/CMakeFiles/docs.dir/clean
+
+# clean rule for target.
+clean: thirdparty/glfw/docs/CMakeFiles/docs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory thirdparty/glew
+
+# Convenience name for "all" pass in the directory.
+thirdparty/glew/all: thirdparty/glew/CMakeFiles/libglewmx_static.dir/all
+thirdparty/glew/all: thirdparty/glew/CMakeFiles/libglew_static.dir/all
+
+.PHONY : thirdparty/glew/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/glew/clean: thirdparty/glew/CMakeFiles/libglewmx_static.dir/clean
+thirdparty/glew/clean: thirdparty/glew/CMakeFiles/libglew_static.dir/clean
+
+.PHONY : thirdparty/glew/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/glew/preinstall:
+
+.PHONY : thirdparty/glew/preinstall
+
+#=============================================================================
+# Target rules for target thirdparty/glew/CMakeFiles/libglewmx_static.dir
+
+# All Build rule for target.
+thirdparty/glew/CMakeFiles/libglewmx_static.dir/all:
+	$(MAKE) -f thirdparty/glew/CMakeFiles/libglewmx_static.dir/build.make thirdparty/glew/CMakeFiles/libglewmx_static.dir/depend
+	$(MAKE) -f thirdparty/glew/CMakeFiles/libglewmx_static.dir/build.make thirdparty/glew/CMakeFiles/libglewmx_static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=76 "Built target libglewmx_static"
+.PHONY : thirdparty/glew/CMakeFiles/libglewmx_static.dir/all
+
+# Include target in all.
+all: thirdparty/glew/CMakeFiles/libglewmx_static.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+thirdparty/glew/CMakeFiles/libglewmx_static.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 thirdparty/glew/CMakeFiles/libglewmx_static.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 0
+.PHONY : thirdparty/glew/CMakeFiles/libglewmx_static.dir/rule
+
+# Convenience name for target.
+libglewmx_static: thirdparty/glew/CMakeFiles/libglewmx_static.dir/rule
+
+.PHONY : libglewmx_static
+
+# clean rule for target.
+thirdparty/glew/CMakeFiles/libglewmx_static.dir/clean:
+	$(MAKE) -f thirdparty/glew/CMakeFiles/libglewmx_static.dir/build.make thirdparty/glew/CMakeFiles/libglewmx_static.dir/clean
+.PHONY : thirdparty/glew/CMakeFiles/libglewmx_static.dir/clean
+
+# clean rule for target.
+clean: thirdparty/glew/CMakeFiles/libglewmx_static.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target thirdparty/glew/CMakeFiles/libglew_static.dir
+
+# All Build rule for target.
+thirdparty/glew/CMakeFiles/libglew_static.dir/all:
+	$(MAKE) -f thirdparty/glew/CMakeFiles/libglew_static.dir/build.make thirdparty/glew/CMakeFiles/libglew_static.dir/depend
+	$(MAKE) -f thirdparty/glew/CMakeFiles/libglew_static.dir/build.make thirdparty/glew/CMakeFiles/libglew_static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num= "Built target libglew_static"
+.PHONY : thirdparty/glew/CMakeFiles/libglew_static.dir/all
+
+# Include target in all.
+all: thirdparty/glew/CMakeFiles/libglew_static.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+thirdparty/glew/CMakeFiles/libglew_static.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 thirdparty/glew/CMakeFiles/libglew_static.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 0
+.PHONY : thirdparty/glew/CMakeFiles/libglew_static.dir/rule
+
+# Convenience name for target.
+libglew_static: thirdparty/glew/CMakeFiles/libglew_static.dir/rule
+
+.PHONY : libglew_static
+
+# clean rule for target.
+thirdparty/glew/CMakeFiles/libglew_static.dir/clean:
+	$(MAKE) -f thirdparty/glew/CMakeFiles/libglew_static.dir/build.make thirdparty/glew/CMakeFiles/libglew_static.dir/clean
+.PHONY : thirdparty/glew/CMakeFiles/libglew_static.dir/clean
+
+# clean rule for target.
+clean: thirdparty/glew/CMakeFiles/libglew_static.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory thirdparty/gtest
+
+# Convenience name for "all" pass in the directory.
+thirdparty/gtest/all: thirdparty/gtest/googlemock/all
+
+.PHONY : thirdparty/gtest/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/gtest/clean: thirdparty/gtest/googlemock/clean
+
+.PHONY : thirdparty/gtest/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/gtest/preinstall: thirdparty/gtest/googlemock/preinstall
+
+.PHONY : thirdparty/gtest/preinstall
+
+#=============================================================================
+# Directory level rules for directory thirdparty/gtest/googlemock
+
+# Convenience name for "all" pass in the directory.
+thirdparty/gtest/googlemock/all: thirdparty/gtest/googlemock/CMakeFiles/gmock.dir/all
+thirdparty/gtest/googlemock/all: thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir/all
+thirdparty/gtest/googlemock/all: thirdparty/gtest/googlemock/gtest/all
+
+.PHONY : thirdparty/gtest/googlemock/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/gtest/googlemock/clean: thirdparty/gtest/googlemock/CMakeFiles/gmock.dir/clean
+thirdparty/gtest/googlemock/clean: thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir/clean
+thirdparty/gtest/googlemock/clean: thirdparty/gtest/googlemock/gtest/clean
+
+.PHONY : thirdparty/gtest/googlemock/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/gtest/googlemock/preinstall: thirdparty/gtest/googlemock/gtest/preinstall
+
+.PHONY : thirdparty/gtest/googlemock/preinstall
+
+#=============================================================================
+# Target rules for target thirdparty/gtest/googlemock/CMakeFiles/gmock.dir
+
+# All Build rule for target.
+thirdparty/gtest/googlemock/CMakeFiles/gmock.dir/all: thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f thirdparty/gtest/googlemock/CMakeFiles/gmock.dir/build.make thirdparty/gtest/googlemock/CMakeFiles/gmock.dir/depend
+	$(MAKE) -f thirdparty/gtest/googlemock/CMakeFiles/gmock.dir/build.make thirdparty/gtest/googlemock/CMakeFiles/gmock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num= "Built target gmock"
+.PHONY : thirdparty/gtest/googlemock/CMakeFiles/gmock.dir/all
+
+# Include target in all.
+all: thirdparty/gtest/googlemock/CMakeFiles/gmock.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+thirdparty/gtest/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 thirdparty/gtest/googlemock/CMakeFiles/gmock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 0
+.PHONY : thirdparty/gtest/googlemock/CMakeFiles/gmock.dir/rule
+
+# Convenience name for target.
+gmock: thirdparty/gtest/googlemock/CMakeFiles/gmock.dir/rule
+
+.PHONY : gmock
+
+# clean rule for target.
+thirdparty/gtest/googlemock/CMakeFiles/gmock.dir/clean:
+	$(MAKE) -f thirdparty/gtest/googlemock/CMakeFiles/gmock.dir/build.make thirdparty/gtest/googlemock/CMakeFiles/gmock.dir/clean
+.PHONY : thirdparty/gtest/googlemock/CMakeFiles/gmock.dir/clean
+
+# clean rule for target.
+clean: thirdparty/gtest/googlemock/CMakeFiles/gmock.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir
+
+# All Build rule for target.
+thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir/all: thirdparty/gtest/googlemock/CMakeFiles/gmock.dir/all
+thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir/all: thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir/build.make thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir/depend
+	$(MAKE) -f thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir/build.make thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=74 "Built target gmock_main"
+.PHONY : thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir/all
+
+# Include target in all.
+all: thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 0
+.PHONY : thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir/rule
+
+# Convenience name for target.
+gmock_main: thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir/rule
+
+.PHONY : gmock_main
+
+# clean rule for target.
+thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
+	$(MAKE) -f thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir/build.make thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir/clean
+.PHONY : thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir/clean
+
+# clean rule for target.
+clean: thirdparty/gtest/googlemock/CMakeFiles/gmock_main.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory thirdparty/gtest/googlemock/gtest
+
+# Convenience name for "all" pass in the directory.
+thirdparty/gtest/googlemock/gtest/all: thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+thirdparty/gtest/googlemock/gtest/all: thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
+
+.PHONY : thirdparty/gtest/googlemock/gtest/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/gtest/googlemock/gtest/clean: thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
+thirdparty/gtest/googlemock/gtest/clean: thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
+
+.PHONY : thirdparty/gtest/googlemock/gtest/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/gtest/googlemock/gtest/preinstall:
+
+.PHONY : thirdparty/gtest/googlemock/gtest/preinstall
+
+#=============================================================================
+# Target rules for target thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir
+
+# All Build rule for target.
+thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all: thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) -f thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=75 "Built target gtest_main"
+.PHONY : thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+
+# Include target in all.
+all: thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 0
+.PHONY : thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
+
+# Convenience name for target.
+gtest_main: thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
+
+.PHONY : gtest_main
+
+# clean rule for target.
+thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) -f thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
+.PHONY : thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
+
+# clean rule for target.
+clean: thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir
+
+# All Build rule for target.
+thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/all:
+	$(MAKE) -f thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/depend
+	$(MAKE) -f thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num= "Built target gtest"
+.PHONY : thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
+
+# Include target in all.
+all: thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 0
+.PHONY : thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/rule
+
+# Convenience name for target.
+gtest: thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/rule
+
+.PHONY : gtest
+
+# clean rule for target.
+thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean:
+	$(MAKE) -f thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
+.PHONY : thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
+
+# clean rule for target.
+clean: thirdparty/gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory thirdparty/assimp
+
+# Convenience name for "all" pass in the directory.
+thirdparty/assimp/all: thirdparty/assimp/contrib/all
+thirdparty/assimp/all: thirdparty/assimp/code/all
+thirdparty/assimp/all: thirdparty/assimp/tools/assimp_cmd/all
+thirdparty/assimp/all: thirdparty/assimp/tools/assimp_qt_viewer/all
+thirdparty/assimp/all: thirdparty/assimp/test/all
+
+.PHONY : thirdparty/assimp/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/assimp/clean: thirdparty/assimp/CMakeFiles/uninstall.dir/clean
+thirdparty/assimp/clean: thirdparty/assimp/contrib/clean
+thirdparty/assimp/clean: thirdparty/assimp/code/clean
+thirdparty/assimp/clean: thirdparty/assimp/tools/assimp_cmd/clean
+thirdparty/assimp/clean: thirdparty/assimp/tools/assimp_qt_viewer/clean
+thirdparty/assimp/clean: thirdparty/assimp/test/clean
+
+.PHONY : thirdparty/assimp/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/assimp/preinstall: thirdparty/assimp/contrib/preinstall
+thirdparty/assimp/preinstall: thirdparty/assimp/code/preinstall
+thirdparty/assimp/preinstall: thirdparty/assimp/tools/assimp_cmd/preinstall
+thirdparty/assimp/preinstall: thirdparty/assimp/tools/assimp_qt_viewer/preinstall
+thirdparty/assimp/preinstall: thirdparty/assimp/test/preinstall
+
+.PHONY : thirdparty/assimp/preinstall
+
+#=============================================================================
+# Target rules for target thirdparty/assimp/CMakeFiles/uninstall.dir
+
+# All Build rule for target.
+thirdparty/assimp/CMakeFiles/uninstall.dir/all:
+	$(MAKE) -f thirdparty/assimp/CMakeFiles/uninstall.dir/build.make thirdparty/assimp/CMakeFiles/uninstall.dir/depend
+	$(MAKE) -f thirdparty/assimp/CMakeFiles/uninstall.dir/build.make thirdparty/assimp/CMakeFiles/uninstall.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num= "Built target uninstall"
+.PHONY : thirdparty/assimp/CMakeFiles/uninstall.dir/all
+
+# Build rule for subdir invocation for target.
+thirdparty/assimp/CMakeFiles/uninstall.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 thirdparty/assimp/CMakeFiles/uninstall.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 0
+.PHONY : thirdparty/assimp/CMakeFiles/uninstall.dir/rule
+
+# Convenience name for target.
+uninstall: thirdparty/assimp/CMakeFiles/uninstall.dir/rule
+
+.PHONY : uninstall
+
+# clean rule for target.
+thirdparty/assimp/CMakeFiles/uninstall.dir/clean:
+	$(MAKE) -f thirdparty/assimp/CMakeFiles/uninstall.dir/build.make thirdparty/assimp/CMakeFiles/uninstall.dir/clean
+.PHONY : thirdparty/assimp/CMakeFiles/uninstall.dir/clean
+
+# clean rule for target.
+clean: thirdparty/assimp/CMakeFiles/uninstall.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory thirdparty/assimp/contrib
+
+# Convenience name for "all" pass in the directory.
+thirdparty/assimp/contrib/all: thirdparty/assimp/contrib/irrXML/all
+
+.PHONY : thirdparty/assimp/contrib/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/assimp/contrib/clean: thirdparty/assimp/contrib/irrXML/clean
+
+.PHONY : thirdparty/assimp/contrib/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/assimp/contrib/preinstall: thirdparty/assimp/contrib/irrXML/preinstall
+
+.PHONY : thirdparty/assimp/contrib/preinstall
+
+#=============================================================================
+# Directory level rules for directory thirdparty/assimp/contrib/irrXML
+
+# Convenience name for "all" pass in the directory.
+thirdparty/assimp/contrib/irrXML/all: thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/all
+
+.PHONY : thirdparty/assimp/contrib/irrXML/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/assimp/contrib/irrXML/clean: thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/clean
+
+.PHONY : thirdparty/assimp/contrib/irrXML/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/assimp/contrib/irrXML/preinstall:
+
+.PHONY : thirdparty/assimp/contrib/irrXML/preinstall
+
+#=============================================================================
+# Target rules for target thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir
+
+# All Build rule for target.
+thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/all:
+	$(MAKE) -f thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/build.make thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/depend
+	$(MAKE) -f thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/build.make thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num= "Built target IrrXML"
+.PHONY : thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/all
+
+# Include target in all.
+all: thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 0
+.PHONY : thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/rule
+
+# Convenience name for target.
+IrrXML: thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/rule
+
+.PHONY : IrrXML
+
+# clean rule for target.
+thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/clean:
+	$(MAKE) -f thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/build.make thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/clean
+.PHONY : thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/clean
+
+# clean rule for target.
+clean: thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory thirdparty/assimp/code
+
+# Convenience name for "all" pass in the directory.
+thirdparty/assimp/code/all: thirdparty/assimp/code/CMakeFiles/assimp.dir/all
+
+.PHONY : thirdparty/assimp/code/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/assimp/code/clean: thirdparty/assimp/code/CMakeFiles/assimp.dir/clean
+
+.PHONY : thirdparty/assimp/code/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/assimp/code/preinstall:
+
+.PHONY : thirdparty/assimp/code/preinstall
+
+#=============================================================================
+# Target rules for target thirdparty/assimp/code/CMakeFiles/assimp.dir
+
+# All Build rule for target.
+thirdparty/assimp/code/CMakeFiles/assimp.dir/all: thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/all
+	$(MAKE) -f thirdparty/assimp/code/CMakeFiles/assimp.dir/build.make thirdparty/assimp/code/CMakeFiles/assimp.dir/depend
+	$(MAKE) -f thirdparty/assimp/code/CMakeFiles/assimp.dir/build.make thirdparty/assimp/code/CMakeFiles/assimp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67 "Built target assimp"
+.PHONY : thirdparty/assimp/code/CMakeFiles/assimp.dir/all
+
+# Include target in all.
+all: thirdparty/assimp/code/CMakeFiles/assimp.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+thirdparty/assimp/code/CMakeFiles/assimp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 53
+	$(MAKE) -f CMakeFiles/Makefile2 thirdparty/assimp/code/CMakeFiles/assimp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 0
+.PHONY : thirdparty/assimp/code/CMakeFiles/assimp.dir/rule
+
+# Convenience name for target.
+assimp: thirdparty/assimp/code/CMakeFiles/assimp.dir/rule
+
+.PHONY : assimp
+
+# clean rule for target.
+thirdparty/assimp/code/CMakeFiles/assimp.dir/clean:
+	$(MAKE) -f thirdparty/assimp/code/CMakeFiles/assimp.dir/build.make thirdparty/assimp/code/CMakeFiles/assimp.dir/clean
+.PHONY : thirdparty/assimp/code/CMakeFiles/assimp.dir/clean
+
+# clean rule for target.
+clean: thirdparty/assimp/code/CMakeFiles/assimp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory thirdparty/assimp/tools/assimp_cmd
+
+# Convenience name for "all" pass in the directory.
+thirdparty/assimp/tools/assimp_cmd/all: thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/all
+
+.PHONY : thirdparty/assimp/tools/assimp_cmd/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/assimp/tools/assimp_cmd/clean: thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/clean
+
+.PHONY : thirdparty/assimp/tools/assimp_cmd/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/assimp/tools/assimp_cmd/preinstall:
+
+.PHONY : thirdparty/assimp/tools/assimp_cmd/preinstall
+
+#=============================================================================
+# Target rules for target thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir
+
+# All Build rule for target.
+thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/all: thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/all
+thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/all: thirdparty/assimp/code/CMakeFiles/assimp.dir/all
+	$(MAKE) -f thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/depend
+	$(MAKE) -f thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=68 "Built target assimp_cmd"
+.PHONY : thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/all
+
+# Include target in all.
+all: thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 54
+	$(MAKE) -f CMakeFiles/Makefile2 thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 0
+.PHONY : thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/rule
+
+# Convenience name for target.
+assimp_cmd: thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/rule
+
+.PHONY : assimp_cmd
+
+# clean rule for target.
+thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/clean:
+	$(MAKE) -f thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/build.make thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/clean
+.PHONY : thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/clean
+
+# clean rule for target.
+clean: thirdparty/assimp/tools/assimp_cmd/CMakeFiles/assimp_cmd.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory thirdparty/assimp/tools/assimp_qt_viewer
+
+# Convenience name for "all" pass in the directory.
+thirdparty/assimp/tools/assimp_qt_viewer/all:
+
+.PHONY : thirdparty/assimp/tools/assimp_qt_viewer/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/assimp/tools/assimp_qt_viewer/clean:
+
+.PHONY : thirdparty/assimp/tools/assimp_qt_viewer/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/assimp/tools/assimp_qt_viewer/preinstall:
+
+.PHONY : thirdparty/assimp/tools/assimp_qt_viewer/preinstall
+
+#=============================================================================
+# Directory level rules for directory thirdparty/assimp/test
+
+# Convenience name for "all" pass in the directory.
+thirdparty/assimp/test/all: thirdparty/assimp/test/CMakeFiles/unit.dir/all
+thirdparty/assimp/test/all: thirdparty/assimp/test/headercheck/all
+
+.PHONY : thirdparty/assimp/test/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/assimp/test/clean: thirdparty/assimp/test/CMakeFiles/unit.dir/clean
+thirdparty/assimp/test/clean: thirdparty/assimp/test/headercheck/clean
+
+.PHONY : thirdparty/assimp/test/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/assimp/test/preinstall: thirdparty/assimp/test/headercheck/preinstall
+
+.PHONY : thirdparty/assimp/test/preinstall
+
+#=============================================================================
+# Target rules for target thirdparty/assimp/test/CMakeFiles/unit.dir
+
+# All Build rule for target.
+thirdparty/assimp/test/CMakeFiles/unit.dir/all: thirdparty/assimp/contrib/irrXML/CMakeFiles/IrrXML.dir/all
+thirdparty/assimp/test/CMakeFiles/unit.dir/all: thirdparty/assimp/code/CMakeFiles/assimp.dir/all
+	$(MAKE) -f thirdparty/assimp/test/CMakeFiles/unit.dir/build.make thirdparty/assimp/test/CMakeFiles/unit.dir/depend
+	$(MAKE) -f thirdparty/assimp/test/CMakeFiles/unit.dir/build.make thirdparty/assimp/test/CMakeFiles/unit.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target unit"
+.PHONY : thirdparty/assimp/test/CMakeFiles/unit.dir/all
+
+# Include target in all.
+all: thirdparty/assimp/test/CMakeFiles/unit.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+thirdparty/assimp/test/CMakeFiles/unit.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 77
+	$(MAKE) -f CMakeFiles/Makefile2 thirdparty/assimp/test/CMakeFiles/unit.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles 0
+.PHONY : thirdparty/assimp/test/CMakeFiles/unit.dir/rule
+
+# Convenience name for target.
+unit: thirdparty/assimp/test/CMakeFiles/unit.dir/rule
+
+.PHONY : unit
+
+# clean rule for target.
+thirdparty/assimp/test/CMakeFiles/unit.dir/clean:
+	$(MAKE) -f thirdparty/assimp/test/CMakeFiles/unit.dir/build.make thirdparty/assimp/test/CMakeFiles/unit.dir/clean
+.PHONY : thirdparty/assimp/test/CMakeFiles/unit.dir/clean
+
+# clean rule for target.
+clean: thirdparty/assimp/test/CMakeFiles/unit.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory thirdparty/assimp/test/headercheck
+
+# Convenience name for "all" pass in the directory.
+thirdparty/assimp/test/headercheck/all:
+
+.PHONY : thirdparty/assimp/test/headercheck/all
+
+# Convenience name for "clean" pass in the directory.
+thirdparty/assimp/test/headercheck/clean:
+
+.PHONY : thirdparty/assimp/test/headercheck/clean
+
+# Convenience name for "preinstall" pass in the directory.
+thirdparty/assimp/test/headercheck/preinstall:
+
+.PHONY : thirdparty/assimp/test/headercheck/preinstall
 
 #=============================================================================
 # Special targets to cleanup operation of make.

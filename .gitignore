@@ -1,0 +1,26 @@
+# Ignore OS X specific files
+.DS_Store/*
+
+# Ignore project output files
+lib/*
+build/*
+bin/*
+
+# Ignore editor specific files
+.idea/*
+
+# Ignore build-debug
+cmake-build-debug/*
+
+thirdparty/*
+include/core/*
+src/core/*
+
+resources/*
+!resources/shaders.json
+!resources/shaders/spriteVS.glsl
+!resources/shaders/spriteFS.glsl
+!resources/shaders/effects/postProcessingVS.glsl
+!resources/shaders/effects/postProcessingFS.glsl
+!resources/textures/body.jpg
+!resources/textures/food.png

@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_FLAGS = -g   -std=gnu++1z
 
-CXX_DEFINES = 
+CXX_DEFINES = -DGLEW_STATIC
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/Users/onura/Downloads/Projects/ProjectSnake/thirdparty/glfw/include -I/Users/onura/Downloads/Projects/ProjectSnake/thirdparty/glew/include -I/Users/onura/Downloads/Projects/ProjectSnake/thirdparty/glew/src -I/Users/onura/Downloads/Projects/ProjectSnake/thirdparty/glm/glm -I/Users/onura/Downloads/Projects/ProjectSnake/thirdparty/stb -I/Users/onura/Downloads/Projects/ProjectSnake/thirdparty/imgui -I/Users/onura/Downloads/Projects/ProjectSnake/thirdparty/gtest/googletest -I/Users/onura/Downloads/Projects/ProjectSnake/thirdparty/gtest/googlemock -I/Users/onura/Downloads/Projects/ProjectSnake/thirdparty/assimp/include -I/Users/onura/Downloads/Projects/ProjectSnake/thirdparty/assimp/code -I/Users/onura/Downloads/Projects/ProjectSnake/thirdparty/nlohman_json/single_include -I/Users/onura/Downloads/Projects/ProjectSnake/include -I/Users/onura/Downloads/Projects/ProjectSnake/thirdparty/assimp/code/../include -I/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/thirdparty/assimp/code/../include 
 

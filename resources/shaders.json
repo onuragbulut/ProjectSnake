@@ -1,0 +1,18 @@
+{
+  "shaders": [
+    {
+      "name": "sprite",
+      "paths": [
+        "shaders/spriteVS.glsl",
+        "shaders/spriteFS.glsl"
+      ]
+    },
+    {
+      "name": "postProcessing",
+      "paths": [
+        "shaders/effects/postProcessingVS.glsl",
+        "shaders/effects/postProcessingFS.glsl"
+      ]
+    }
+  ]
+}

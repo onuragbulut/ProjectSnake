@@ -57,30 +57,830 @@ include CMakeFiles/ProjectSnake.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ProjectSnake.dir/flags.make
 
-CMakeFiles/ProjectSnake.dir/main.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
-CMakeFiles/ProjectSnake.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ProjectSnake.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/main.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/main.cpp
+CMakeFiles/ProjectSnake.dir/src/core/effect/Bloom.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/effect/Bloom.cpp.o: ../src/core/effect/Bloom.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/effect/Bloom.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/effect/Bloom.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/effect/Bloom.cpp
 
-CMakeFiles/ProjectSnake.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/main.cpp > CMakeFiles/ProjectSnake.dir/main.cpp.i
+CMakeFiles/ProjectSnake.dir/src/core/effect/Bloom.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/effect/Bloom.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/effect/Bloom.cpp > CMakeFiles/ProjectSnake.dir/src/core/effect/Bloom.cpp.i
 
-CMakeFiles/ProjectSnake.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/main.cpp -o CMakeFiles/ProjectSnake.dir/main.cpp.s
+CMakeFiles/ProjectSnake.dir/src/core/effect/Bloom.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/effect/Bloom.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/effect/Bloom.cpp -o CMakeFiles/ProjectSnake.dir/src/core/effect/Bloom.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/effect/Shadow.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/effect/Shadow.cpp.o: ../src/core/effect/Shadow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/effect/Shadow.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/effect/Shadow.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/effect/Shadow.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/effect/Shadow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/effect/Shadow.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/effect/Shadow.cpp > CMakeFiles/ProjectSnake.dir/src/core/effect/Shadow.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/effect/Shadow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/effect/Shadow.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/effect/Shadow.cpp -o CMakeFiles/ProjectSnake.dir/src/core/effect/Shadow.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/factory/AssetFactory.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/factory/AssetFactory.cpp.o: ../src/core/factory/AssetFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/factory/AssetFactory.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/factory/AssetFactory.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/factory/AssetFactory.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/factory/AssetFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/factory/AssetFactory.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/factory/AssetFactory.cpp > CMakeFiles/ProjectSnake.dir/src/core/factory/AssetFactory.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/factory/AssetFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/factory/AssetFactory.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/factory/AssetFactory.cpp -o CMakeFiles/ProjectSnake.dir/src/core/factory/AssetFactory.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/factory/BufferFactory.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/factory/BufferFactory.cpp.o: ../src/core/factory/BufferFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/factory/BufferFactory.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/factory/BufferFactory.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/factory/BufferFactory.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/factory/BufferFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/factory/BufferFactory.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/factory/BufferFactory.cpp > CMakeFiles/ProjectSnake.dir/src/core/factory/BufferFactory.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/factory/BufferFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/factory/BufferFactory.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/factory/BufferFactory.cpp -o CMakeFiles/ProjectSnake.dir/src/core/factory/BufferFactory.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/factory/ModelFactory.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/factory/ModelFactory.cpp.o: ../src/core/factory/ModelFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/factory/ModelFactory.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/factory/ModelFactory.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/factory/ModelFactory.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/factory/ModelFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/factory/ModelFactory.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/factory/ModelFactory.cpp > CMakeFiles/ProjectSnake.dir/src/core/factory/ModelFactory.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/factory/ModelFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/factory/ModelFactory.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/factory/ModelFactory.cpp -o CMakeFiles/ProjectSnake.dir/src/core/factory/ModelFactory.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/factory/RenderTargetFactory.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/factory/RenderTargetFactory.cpp.o: ../src/core/factory/RenderTargetFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/factory/RenderTargetFactory.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/factory/RenderTargetFactory.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/factory/RenderTargetFactory.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/factory/RenderTargetFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/factory/RenderTargetFactory.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/factory/RenderTargetFactory.cpp > CMakeFiles/ProjectSnake.dir/src/core/factory/RenderTargetFactory.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/factory/RenderTargetFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/factory/RenderTargetFactory.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/factory/RenderTargetFactory.cpp -o CMakeFiles/ProjectSnake.dir/src/core/factory/RenderTargetFactory.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/factory/ShaderCreator.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/factory/ShaderCreator.cpp.o: ../src/core/factory/ShaderCreator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/factory/ShaderCreator.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/factory/ShaderCreator.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/factory/ShaderCreator.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/factory/ShaderCreator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/factory/ShaderCreator.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/factory/ShaderCreator.cpp > CMakeFiles/ProjectSnake.dir/src/core/factory/ShaderCreator.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/factory/ShaderCreator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/factory/ShaderCreator.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/factory/ShaderCreator.cpp -o CMakeFiles/ProjectSnake.dir/src/core/factory/ShaderCreator.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/factory/TextureFactory.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/factory/TextureFactory.cpp.o: ../src/core/factory/TextureFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/factory/TextureFactory.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/factory/TextureFactory.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/factory/TextureFactory.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/factory/TextureFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/factory/TextureFactory.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/factory/TextureFactory.cpp > CMakeFiles/ProjectSnake.dir/src/core/factory/TextureFactory.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/factory/TextureFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/factory/TextureFactory.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/factory/TextureFactory.cpp -o CMakeFiles/ProjectSnake.dir/src/core/factory/TextureFactory.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/BoundingBox.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/graphics/BoundingBox.cpp.o: ../src/core/graphics/BoundingBox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/graphics/BoundingBox.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/graphics/BoundingBox.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/BoundingBox.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/BoundingBox.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/graphics/BoundingBox.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/BoundingBox.cpp > CMakeFiles/ProjectSnake.dir/src/core/graphics/BoundingBox.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/BoundingBox.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/graphics/BoundingBox.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/BoundingBox.cpp -o CMakeFiles/ProjectSnake.dir/src/core/graphics/BoundingBox.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/Cubemap.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/graphics/Cubemap.cpp.o: ../src/core/graphics/Cubemap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/graphics/Cubemap.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/graphics/Cubemap.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/Cubemap.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/Cubemap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/graphics/Cubemap.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/Cubemap.cpp > CMakeFiles/ProjectSnake.dir/src/core/graphics/Cubemap.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/Cubemap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/graphics/Cubemap.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/Cubemap.cpp -o CMakeFiles/ProjectSnake.dir/src/core/graphics/Cubemap.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/Light.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/graphics/Light.cpp.o: ../src/core/graphics/Light.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/graphics/Light.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/graphics/Light.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/Light.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/Light.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/graphics/Light.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/Light.cpp > CMakeFiles/ProjectSnake.dir/src/core/graphics/Light.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/Light.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/graphics/Light.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/Light.cpp -o CMakeFiles/ProjectSnake.dir/src/core/graphics/Light.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderCache.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderCache.cpp.o: ../src/core/graphics/RenderCache.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderCache.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderCache.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/RenderCache.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderCache.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderCache.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/RenderCache.cpp > CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderCache.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderCache.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderCache.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/RenderCache.cpp -o CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderCache.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderTarget.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderTarget.cpp.o: ../src/core/graphics/RenderTarget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderTarget.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderTarget.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/RenderTarget.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderTarget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderTarget.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/RenderTarget.cpp > CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderTarget.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderTarget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderTarget.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/RenderTarget.cpp -o CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderTarget.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/Renderer.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/graphics/Renderer.cpp.o: ../src/core/graphics/Renderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/graphics/Renderer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/graphics/Renderer.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/Renderer.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/Renderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/graphics/Renderer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/Renderer.cpp > CMakeFiles/ProjectSnake.dir/src/core/graphics/Renderer.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/Renderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/graphics/Renderer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/Renderer.cpp -o CMakeFiles/ProjectSnake.dir/src/core/graphics/Renderer.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/Shader.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/graphics/Shader.cpp.o: ../src/core/graphics/Shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/graphics/Shader.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/graphics/Shader.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/Shader.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/Shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/graphics/Shader.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/Shader.cpp > CMakeFiles/ProjectSnake.dir/src/core/graphics/Shader.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/Shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/graphics/Shader.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/Shader.cpp -o CMakeFiles/ProjectSnake.dir/src/core/graphics/Shader.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/Texture.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/graphics/Texture.cpp.o: ../src/core/graphics/Texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/graphics/Texture.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/graphics/Texture.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/Texture.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/Texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/graphics/Texture.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/Texture.cpp > CMakeFiles/ProjectSnake.dir/src/core/graphics/Texture.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/graphics/Texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/graphics/Texture.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/graphics/Texture.cpp -o CMakeFiles/ProjectSnake.dir/src/core/graphics/Texture.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/input/InputDevice.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/input/InputDevice.cpp.o: ../src/core/input/InputDevice.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/input/InputDevice.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/input/InputDevice.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/input/InputDevice.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/input/InputDevice.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/input/InputDevice.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/input/InputDevice.cpp > CMakeFiles/ProjectSnake.dir/src/core/input/InputDevice.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/input/InputDevice.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/input/InputDevice.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/input/InputDevice.cpp -o CMakeFiles/ProjectSnake.dir/src/core/input/InputDevice.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Mesh.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Mesh.cpp.o: ../src/core/mesh/Mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/mesh/Mesh.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/mesh/Mesh.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/mesh/Mesh.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Mesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/mesh/Mesh.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/mesh/Mesh.cpp > CMakeFiles/ProjectSnake.dir/src/core/mesh/Mesh.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Mesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/mesh/Mesh.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/mesh/Mesh.cpp -o CMakeFiles/ProjectSnake.dir/src/core/mesh/Mesh.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Model.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Model.cpp.o: ../src/core/mesh/Model.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/mesh/Model.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/mesh/Model.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/mesh/Model.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Model.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/mesh/Model.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/mesh/Model.cpp > CMakeFiles/ProjectSnake.dir/src/core/mesh/Model.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Model.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/mesh/Model.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/mesh/Model.cpp -o CMakeFiles/ProjectSnake.dir/src/core/mesh/Model.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Quad.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Quad.cpp.o: ../src/core/mesh/Quad.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/mesh/Quad.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/mesh/Quad.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/mesh/Quad.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Quad.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/mesh/Quad.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/mesh/Quad.cpp > CMakeFiles/ProjectSnake.dir/src/core/mesh/Quad.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Quad.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/mesh/Quad.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/mesh/Quad.cpp -o CMakeFiles/ProjectSnake.dir/src/core/mesh/Quad.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Sprite.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Sprite.cpp.o: ../src/core/mesh/Sprite.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/mesh/Sprite.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/mesh/Sprite.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/mesh/Sprite.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Sprite.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/mesh/Sprite.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/mesh/Sprite.cpp > CMakeFiles/ProjectSnake.dir/src/core/mesh/Sprite.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Sprite.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/mesh/Sprite.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/mesh/Sprite.cpp -o CMakeFiles/ProjectSnake.dir/src/core/mesh/Sprite.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Terrain.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Terrain.cpp.o: ../src/core/mesh/Terrain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/mesh/Terrain.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/mesh/Terrain.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/mesh/Terrain.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Terrain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/mesh/Terrain.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/mesh/Terrain.cpp > CMakeFiles/ProjectSnake.dir/src/core/mesh/Terrain.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Terrain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/mesh/Terrain.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/mesh/Terrain.cpp -o CMakeFiles/ProjectSnake.dir/src/core/mesh/Terrain.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Vegetation.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Vegetation.cpp.o: ../src/core/mesh/Vegetation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/mesh/Vegetation.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/mesh/Vegetation.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/mesh/Vegetation.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Vegetation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/mesh/Vegetation.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/mesh/Vegetation.cpp > CMakeFiles/ProjectSnake.dir/src/core/mesh/Vegetation.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/mesh/Vegetation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/mesh/Vegetation.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/mesh/Vegetation.cpp -o CMakeFiles/ProjectSnake.dir/src/core/mesh/Vegetation.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/platform/Application.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/platform/Application.cpp.o: ../src/core/platform/Application.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/platform/Application.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/platform/Application.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/platform/Application.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/platform/Application.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/platform/Application.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/platform/Application.cpp > CMakeFiles/ProjectSnake.dir/src/core/platform/Application.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/platform/Application.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/platform/Application.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/platform/Application.cpp -o CMakeFiles/ProjectSnake.dir/src/core/platform/Application.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/system/Camera.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/system/Camera.cpp.o: ../src/core/system/Camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/system/Camera.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/system/Camera.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/Camera.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/system/Camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/system/Camera.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/Camera.cpp > CMakeFiles/ProjectSnake.dir/src/core/system/Camera.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/system/Camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/system/Camera.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/Camera.cpp -o CMakeFiles/ProjectSnake.dir/src/core/system/Camera.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/system/CameraFrustum.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/system/CameraFrustum.cpp.o: ../src/core/system/CameraFrustum.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/system/CameraFrustum.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/system/CameraFrustum.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/CameraFrustum.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/system/CameraFrustum.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/system/CameraFrustum.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/CameraFrustum.cpp > CMakeFiles/ProjectSnake.dir/src/core/system/CameraFrustum.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/system/CameraFrustum.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/system/CameraFrustum.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/CameraFrustum.cpp -o CMakeFiles/ProjectSnake.dir/src/core/system/CameraFrustum.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/system/FileSystem.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/system/FileSystem.cpp.o: ../src/core/system/FileSystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/system/FileSystem.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/system/FileSystem.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/FileSystem.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/system/FileSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/system/FileSystem.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/FileSystem.cpp > CMakeFiles/ProjectSnake.dir/src/core/system/FileSystem.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/system/FileSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/system/FileSystem.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/FileSystem.cpp -o CMakeFiles/ProjectSnake.dir/src/core/system/FileSystem.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/system/OrthoCamera.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/system/OrthoCamera.cpp.o: ../src/core/system/OrthoCamera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/system/OrthoCamera.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/system/OrthoCamera.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/OrthoCamera.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/system/OrthoCamera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/system/OrthoCamera.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/OrthoCamera.cpp > CMakeFiles/ProjectSnake.dir/src/core/system/OrthoCamera.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/system/OrthoCamera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/system/OrthoCamera.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/OrthoCamera.cpp -o CMakeFiles/ProjectSnake.dir/src/core/system/OrthoCamera.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/system/ResourceManager.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/system/ResourceManager.cpp.o: ../src/core/system/ResourceManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/system/ResourceManager.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/system/ResourceManager.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/ResourceManager.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/system/ResourceManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/system/ResourceManager.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/ResourceManager.cpp > CMakeFiles/ProjectSnake.dir/src/core/system/ResourceManager.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/system/ResourceManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/system/ResourceManager.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/ResourceManager.cpp -o CMakeFiles/ProjectSnake.dir/src/core/system/ResourceManager.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/system/Scene.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/system/Scene.cpp.o: ../src/core/system/Scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/system/Scene.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/system/Scene.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/Scene.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/system/Scene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/system/Scene.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/Scene.cpp > CMakeFiles/ProjectSnake.dir/src/core/system/Scene.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/system/Scene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/system/Scene.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/Scene.cpp -o CMakeFiles/ProjectSnake.dir/src/core/system/Scene.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/system/Stats.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/system/Stats.cpp.o: ../src/core/system/Stats.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/system/Stats.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/system/Stats.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/Stats.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/system/Stats.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/system/Stats.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/Stats.cpp > CMakeFiles/ProjectSnake.dir/src/core/system/Stats.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/system/Stats.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/system/Stats.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/Stats.cpp -o CMakeFiles/ProjectSnake.dir/src/core/system/Stats.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/system/Timer.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/system/Timer.cpp.o: ../src/core/system/Timer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/system/Timer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/system/Timer.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/Timer.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/system/Timer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/system/Timer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/Timer.cpp > CMakeFiles/ProjectSnake.dir/src/core/system/Timer.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/system/Timer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/system/Timer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/Timer.cpp -o CMakeFiles/ProjectSnake.dir/src/core/system/Timer.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/system/UISystem.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/system/UISystem.cpp.o: ../src/core/system/UISystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/system/UISystem.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/system/UISystem.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/UISystem.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/system/UISystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/system/UISystem.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/UISystem.cpp > CMakeFiles/ProjectSnake.dir/src/core/system/UISystem.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/system/UISystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/system/UISystem.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/UISystem.cpp -o CMakeFiles/ProjectSnake.dir/src/core/system/UISystem.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/core/system/VisibilityManager.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/core/system/VisibilityManager.cpp.o: ../src/core/system/VisibilityManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/ProjectSnake.dir/src/core/system/VisibilityManager.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/core/system/VisibilityManager.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/VisibilityManager.cpp
+
+CMakeFiles/ProjectSnake.dir/src/core/system/VisibilityManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/core/system/VisibilityManager.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/VisibilityManager.cpp > CMakeFiles/ProjectSnake.dir/src/core/system/VisibilityManager.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/core/system/VisibilityManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/core/system/VisibilityManager.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/core/system/VisibilityManager.cpp -o CMakeFiles/ProjectSnake.dir/src/core/system/VisibilityManager.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/game/CommandCenter.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/game/CommandCenter.cpp.o: ../src/game/CommandCenter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/ProjectSnake.dir/src/game/CommandCenter.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/game/CommandCenter.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/game/CommandCenter.cpp
+
+CMakeFiles/ProjectSnake.dir/src/game/CommandCenter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/game/CommandCenter.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/game/CommandCenter.cpp > CMakeFiles/ProjectSnake.dir/src/game/CommandCenter.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/game/CommandCenter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/game/CommandCenter.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/game/CommandCenter.cpp -o CMakeFiles/ProjectSnake.dir/src/game/CommandCenter.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/game/GameContext.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/game/GameContext.cpp.o: ../src/game/GameContext.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/ProjectSnake.dir/src/game/GameContext.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/game/GameContext.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/game/GameContext.cpp
+
+CMakeFiles/ProjectSnake.dir/src/game/GameContext.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/game/GameContext.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/game/GameContext.cpp > CMakeFiles/ProjectSnake.dir/src/game/GameContext.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/game/GameContext.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/game/GameContext.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/game/GameContext.cpp -o CMakeFiles/ProjectSnake.dir/src/game/GameContext.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/game/command/CheckConstraintsGameCommand.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/game/command/CheckConstraintsGameCommand.cpp.o: ../src/game/command/CheckConstraintsGameCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/ProjectSnake.dir/src/game/command/CheckConstraintsGameCommand.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/game/command/CheckConstraintsGameCommand.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/game/command/CheckConstraintsGameCommand.cpp
+
+CMakeFiles/ProjectSnake.dir/src/game/command/CheckConstraintsGameCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/game/command/CheckConstraintsGameCommand.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/game/command/CheckConstraintsGameCommand.cpp > CMakeFiles/ProjectSnake.dir/src/game/command/CheckConstraintsGameCommand.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/game/command/CheckConstraintsGameCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/game/command/CheckConstraintsGameCommand.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/game/command/CheckConstraintsGameCommand.cpp -o CMakeFiles/ProjectSnake.dir/src/game/command/CheckConstraintsGameCommand.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.o: ../src/game/command/CheckSnakeFoodCollisionGameCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/ProjectSnake.dir/src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/game/command/CheckSnakeFoodCollisionGameCommand.cpp
+
+CMakeFiles/ProjectSnake.dir/src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/game/command/CheckSnakeFoodCollisionGameCommand.cpp > CMakeFiles/ProjectSnake.dir/src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/game/command/CheckSnakeFoodCollisionGameCommand.cpp -o CMakeFiles/ProjectSnake.dir/src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/game/command/ExtendActorGameCommand.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/game/command/ExtendActorGameCommand.cpp.o: ../src/game/command/ExtendActorGameCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/ProjectSnake.dir/src/game/command/ExtendActorGameCommand.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/game/command/ExtendActorGameCommand.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/game/command/ExtendActorGameCommand.cpp
+
+CMakeFiles/ProjectSnake.dir/src/game/command/ExtendActorGameCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/game/command/ExtendActorGameCommand.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/game/command/ExtendActorGameCommand.cpp > CMakeFiles/ProjectSnake.dir/src/game/command/ExtendActorGameCommand.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/game/command/ExtendActorGameCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/game/command/ExtendActorGameCommand.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/game/command/ExtendActorGameCommand.cpp -o CMakeFiles/ProjectSnake.dir/src/game/command/ExtendActorGameCommand.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/game/command/MakeTurnGameCommand.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/game/command/MakeTurnGameCommand.cpp.o: ../src/game/command/MakeTurnGameCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/ProjectSnake.dir/src/game/command/MakeTurnGameCommand.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/game/command/MakeTurnGameCommand.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/game/command/MakeTurnGameCommand.cpp
+
+CMakeFiles/ProjectSnake.dir/src/game/command/MakeTurnGameCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/game/command/MakeTurnGameCommand.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/game/command/MakeTurnGameCommand.cpp > CMakeFiles/ProjectSnake.dir/src/game/command/MakeTurnGameCommand.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/game/command/MakeTurnGameCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/game/command/MakeTurnGameCommand.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/game/command/MakeTurnGameCommand.cpp -o CMakeFiles/ProjectSnake.dir/src/game/command/MakeTurnGameCommand.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/game/command/SpawnFoodGameCommand.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/game/command/SpawnFoodGameCommand.cpp.o: ../src/game/command/SpawnFoodGameCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/ProjectSnake.dir/src/game/command/SpawnFoodGameCommand.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/game/command/SpawnFoodGameCommand.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/game/command/SpawnFoodGameCommand.cpp
+
+CMakeFiles/ProjectSnake.dir/src/game/command/SpawnFoodGameCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/game/command/SpawnFoodGameCommand.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/game/command/SpawnFoodGameCommand.cpp > CMakeFiles/ProjectSnake.dir/src/game/command/SpawnFoodGameCommand.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/game/command/SpawnFoodGameCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/game/command/SpawnFoodGameCommand.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/game/command/SpawnFoodGameCommand.cpp -o CMakeFiles/ProjectSnake.dir/src/game/command/SpawnFoodGameCommand.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/game/command/UpdateFoodTransformGameCommand.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/game/command/UpdateFoodTransformGameCommand.cpp.o: ../src/game/command/UpdateFoodTransformGameCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/ProjectSnake.dir/src/game/command/UpdateFoodTransformGameCommand.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/game/command/UpdateFoodTransformGameCommand.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/game/command/UpdateFoodTransformGameCommand.cpp
+
+CMakeFiles/ProjectSnake.dir/src/game/command/UpdateFoodTransformGameCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/game/command/UpdateFoodTransformGameCommand.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/game/command/UpdateFoodTransformGameCommand.cpp > CMakeFiles/ProjectSnake.dir/src/game/command/UpdateFoodTransformGameCommand.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/game/command/UpdateFoodTransformGameCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/game/command/UpdateFoodTransformGameCommand.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/game/command/UpdateFoodTransformGameCommand.cpp -o CMakeFiles/ProjectSnake.dir/src/game/command/UpdateFoodTransformGameCommand.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/game/command/UpdateSnakeTransformGameCommand.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/game/command/UpdateSnakeTransformGameCommand.cpp.o: ../src/game/command/UpdateSnakeTransformGameCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/ProjectSnake.dir/src/game/command/UpdateSnakeTransformGameCommand.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/game/command/UpdateSnakeTransformGameCommand.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/game/command/UpdateSnakeTransformGameCommand.cpp
+
+CMakeFiles/ProjectSnake.dir/src/game/command/UpdateSnakeTransformGameCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/game/command/UpdateSnakeTransformGameCommand.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/game/command/UpdateSnakeTransformGameCommand.cpp > CMakeFiles/ProjectSnake.dir/src/game/command/UpdateSnakeTransformGameCommand.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/game/command/UpdateSnakeTransformGameCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/game/command/UpdateSnakeTransformGameCommand.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/game/command/UpdateSnakeTransformGameCommand.cpp -o CMakeFiles/ProjectSnake.dir/src/game/command/UpdateSnakeTransformGameCommand.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/game/model/FoodModel.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/game/model/FoodModel.cpp.o: ../src/game/model/FoodModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/ProjectSnake.dir/src/game/model/FoodModel.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/game/model/FoodModel.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/game/model/FoodModel.cpp
+
+CMakeFiles/ProjectSnake.dir/src/game/model/FoodModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/game/model/FoodModel.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/game/model/FoodModel.cpp > CMakeFiles/ProjectSnake.dir/src/game/model/FoodModel.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/game/model/FoodModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/game/model/FoodModel.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/game/model/FoodModel.cpp -o CMakeFiles/ProjectSnake.dir/src/game/model/FoodModel.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/game/model/SnakeModel.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/game/model/SnakeModel.cpp.o: ../src/game/model/SnakeModel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/ProjectSnake.dir/src/game/model/SnakeModel.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/game/model/SnakeModel.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/game/model/SnakeModel.cpp
+
+CMakeFiles/ProjectSnake.dir/src/game/model/SnakeModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/game/model/SnakeModel.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/game/model/SnakeModel.cpp > CMakeFiles/ProjectSnake.dir/src/game/model/SnakeModel.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/game/model/SnakeModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/game/model/SnakeModel.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/game/model/SnakeModel.cpp -o CMakeFiles/ProjectSnake.dir/src/game/model/SnakeModel.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/game/view/FoodView.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/game/view/FoodView.cpp.o: ../src/game/view/FoodView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/ProjectSnake.dir/src/game/view/FoodView.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/game/view/FoodView.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/game/view/FoodView.cpp
+
+CMakeFiles/ProjectSnake.dir/src/game/view/FoodView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/game/view/FoodView.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/game/view/FoodView.cpp > CMakeFiles/ProjectSnake.dir/src/game/view/FoodView.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/game/view/FoodView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/game/view/FoodView.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/game/view/FoodView.cpp -o CMakeFiles/ProjectSnake.dir/src/game/view/FoodView.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/game/view/FoodViewMediator.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/game/view/FoodViewMediator.cpp.o: ../src/game/view/FoodViewMediator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/ProjectSnake.dir/src/game/view/FoodViewMediator.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/game/view/FoodViewMediator.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/game/view/FoodViewMediator.cpp
+
+CMakeFiles/ProjectSnake.dir/src/game/view/FoodViewMediator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/game/view/FoodViewMediator.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/game/view/FoodViewMediator.cpp > CMakeFiles/ProjectSnake.dir/src/game/view/FoodViewMediator.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/game/view/FoodViewMediator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/game/view/FoodViewMediator.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/game/view/FoodViewMediator.cpp -o CMakeFiles/ProjectSnake.dir/src/game/view/FoodViewMediator.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/game/view/SnakeView.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/game/view/SnakeView.cpp.o: ../src/game/view/SnakeView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/ProjectSnake.dir/src/game/view/SnakeView.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/game/view/SnakeView.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/game/view/SnakeView.cpp
+
+CMakeFiles/ProjectSnake.dir/src/game/view/SnakeView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/game/view/SnakeView.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/game/view/SnakeView.cpp > CMakeFiles/ProjectSnake.dir/src/game/view/SnakeView.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/game/view/SnakeView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/game/view/SnakeView.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/game/view/SnakeView.cpp -o CMakeFiles/ProjectSnake.dir/src/game/view/SnakeView.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/game/view/SnakeViewMediator.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/game/view/SnakeViewMediator.cpp.o: ../src/game/view/SnakeViewMediator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/ProjectSnake.dir/src/game/view/SnakeViewMediator.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/game/view/SnakeViewMediator.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/game/view/SnakeViewMediator.cpp
+
+CMakeFiles/ProjectSnake.dir/src/game/view/SnakeViewMediator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/game/view/SnakeViewMediator.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/game/view/SnakeViewMediator.cpp > CMakeFiles/ProjectSnake.dir/src/game/view/SnakeViewMediator.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/game/view/SnakeViewMediator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/game/view/SnakeViewMediator.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/game/view/SnakeViewMediator.cpp -o CMakeFiles/ProjectSnake.dir/src/game/view/SnakeViewMediator.cpp.s
+
+CMakeFiles/ProjectSnake.dir/thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.o: ../thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/ProjectSnake.dir/thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp
+
+CMakeFiles/ProjectSnake.dir/thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp > CMakeFiles/ProjectSnake.dir/thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.i
+
+CMakeFiles/ProjectSnake.dir/thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp -o CMakeFiles/ProjectSnake.dir/thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.s
+
+CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui.cpp.o: ../thirdparty/imgui/imgui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/thirdparty/imgui/imgui.cpp
+
+CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/thirdparty/imgui/imgui.cpp > CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui.cpp.i
+
+CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/thirdparty/imgui/imgui.cpp -o CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui.cpp.s
+
+CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_demo.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_demo.cpp.o: ../thirdparty/imgui/imgui_demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_demo.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_demo.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/thirdparty/imgui/imgui_demo.cpp
+
+CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_demo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_demo.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/thirdparty/imgui/imgui_demo.cpp > CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_demo.cpp.i
+
+CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_demo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_demo.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/thirdparty/imgui/imgui_demo.cpp -o CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_demo.cpp.s
+
+CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_draw.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_draw.cpp.o: ../thirdparty/imgui/imgui_draw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_draw.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_draw.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/thirdparty/imgui/imgui_draw.cpp
+
+CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_draw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_draw.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/thirdparty/imgui/imgui_draw.cpp > CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_draw.cpp.i
+
+CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_draw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_draw.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/thirdparty/imgui/imgui_draw.cpp -o CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_draw.cpp.s
+
+CMakeFiles/ProjectSnake.dir/src/main.cpp.o: CMakeFiles/ProjectSnake.dir/flags.make
+CMakeFiles/ProjectSnake.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/ProjectSnake.dir/src/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ProjectSnake.dir/src/main.cpp.o -c /Users/onura/Downloads/Projects/ProjectSnake/src/main.cpp
+
+CMakeFiles/ProjectSnake.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectSnake.dir/src/main.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/onura/Downloads/Projects/ProjectSnake/src/main.cpp > CMakeFiles/ProjectSnake.dir/src/main.cpp.i
+
+CMakeFiles/ProjectSnake.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectSnake.dir/src/main.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/onura/Downloads/Projects/ProjectSnake/src/main.cpp -o CMakeFiles/ProjectSnake.dir/src/main.cpp.s
 
 # Object files for target ProjectSnake
 ProjectSnake_OBJECTS = \
-"CMakeFiles/ProjectSnake.dir/main.cpp.o"
+"CMakeFiles/ProjectSnake.dir/src/core/effect/Bloom.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/effect/Shadow.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/factory/AssetFactory.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/factory/BufferFactory.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/factory/ModelFactory.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/factory/RenderTargetFactory.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/factory/ShaderCreator.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/factory/TextureFactory.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/graphics/BoundingBox.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/graphics/Cubemap.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/graphics/Light.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderCache.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderTarget.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/graphics/Renderer.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/graphics/Shader.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/graphics/Texture.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/input/InputDevice.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/mesh/Mesh.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/mesh/Model.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/mesh/Quad.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/mesh/Sprite.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/mesh/Terrain.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/mesh/Vegetation.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/platform/Application.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/system/Camera.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/system/CameraFrustum.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/system/FileSystem.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/system/OrthoCamera.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/system/ResourceManager.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/system/Scene.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/system/Stats.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/system/Timer.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/system/UISystem.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/core/system/VisibilityManager.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/game/CommandCenter.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/game/GameContext.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/game/command/CheckConstraintsGameCommand.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/game/command/ExtendActorGameCommand.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/game/command/MakeTurnGameCommand.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/game/command/SpawnFoodGameCommand.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/game/command/UpdateFoodTransformGameCommand.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/game/command/UpdateSnakeTransformGameCommand.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/game/model/FoodModel.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/game/model/SnakeModel.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/game/view/FoodView.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/game/view/FoodViewMediator.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/game/view/SnakeView.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/game/view/SnakeViewMediator.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_demo.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_draw.cpp.o" \
+"CMakeFiles/ProjectSnake.dir/src/main.cpp.o"
 
 # External object files for target ProjectSnake
 ProjectSnake_EXTERNAL_OBJECTS =
 
-ProjectSnake: CMakeFiles/ProjectSnake.dir/main.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/effect/Bloom.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/effect/Shadow.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/factory/AssetFactory.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/factory/BufferFactory.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/factory/ModelFactory.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/factory/RenderTargetFactory.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/factory/ShaderCreator.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/factory/TextureFactory.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/graphics/BoundingBox.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/graphics/Cubemap.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/graphics/Light.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderCache.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/graphics/RenderTarget.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/graphics/Renderer.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/graphics/Shader.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/graphics/Texture.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/input/InputDevice.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/mesh/Mesh.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/mesh/Model.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/mesh/Quad.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/mesh/Sprite.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/mesh/Terrain.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/mesh/Vegetation.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/platform/Application.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/system/Camera.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/system/CameraFrustum.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/system/FileSystem.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/system/OrthoCamera.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/system/ResourceManager.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/system/Scene.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/system/Stats.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/system/Timer.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/system/UISystem.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/core/system/VisibilityManager.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/game/CommandCenter.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/game/GameContext.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/game/command/CheckConstraintsGameCommand.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/game/command/CheckSnakeFoodCollisionGameCommand.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/game/command/ExtendActorGameCommand.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/game/command/MakeTurnGameCommand.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/game/command/SpawnFoodGameCommand.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/game/command/UpdateFoodTransformGameCommand.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/game/command/UpdateSnakeTransformGameCommand.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/game/model/FoodModel.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/game/model/SnakeModel.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/game/view/FoodView.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/game/view/FoodViewMediator.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/game/view/SnakeView.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/game/view/SnakeViewMediator.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/thirdparty/imgui/examples/opengl3_example/imgui_impl_glfw_gl3.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_demo.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/thirdparty/imgui/imgui_draw.cpp.o
+ProjectSnake: CMakeFiles/ProjectSnake.dir/src/main.cpp.o
 ProjectSnake: CMakeFiles/ProjectSnake.dir/build.make
+ProjectSnake: thirdparty/glfw/src/libglfw3d.a
+ProjectSnake: lib/libglewd.a
+ProjectSnake: thirdparty/assimp/code/libassimpd.a
+ProjectSnake: /usr/lib/libz.dylib
+ProjectSnake: thirdparty/assimp/contrib/irrXML/libIrrXMLd.a
 ProjectSnake: CMakeFiles/ProjectSnake.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ProjectSnake"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/onura/Downloads/Projects/ProjectSnake/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Linking CXX executable ProjectSnake"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ProjectSnake.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
