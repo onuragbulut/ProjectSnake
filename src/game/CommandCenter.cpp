@@ -50,7 +50,7 @@ void CommandCenter::Map(const Event& event, GameCommand* command)
 
 void CommandCenter::ProcessCommands()
 {
-	for(int i = mLastIndex; i < mCommandList.size(); i++)
+	for(std::size_t i = mLastIndex; i < mCommandList.size(); i++)
 	{
 		Event event = mCommandList[i];
 		if(event != Event::NONE)

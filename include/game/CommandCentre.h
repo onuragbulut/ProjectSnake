@@ -50,7 +50,7 @@ public:
 private:
 	std::vector<Event> mCommandList;
 	std::map<Event, GameCommand*> mCommandMappings;
-	int mLastIndex = 0;
+	std::size_t mLastIndex = 0;
 };
 
 #endif //PROJECTMATCH3_COMMANDCENTRE_H
